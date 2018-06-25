@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/resgin.css">
+</head>
+<body>
+    <header>
+        <div class="logo-con">
+            <a class="logo" href="jd.com"></a>
+            <div class="text">欢迎注册</div>
+            <div class="header-right">
+                已有账号？
+                <a href="login.html">请登录></a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container_top">
+            <div class="num ">
+                <span class="green">1</span>
+                <p class="text_green">验证手机号</p>
+            </div>
+            <div class="line line_left"></div>
+            <div class="num num2">
+                <span>2</span>
+                <p>填写账号信息</p>
+            </div>
+            <div class="line line_right"></div>
+            <div class="num num3">
+                <span>3</span>
+                <p>完成注册</p>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+        <div class="main">
+            <form action="" class="one">
+                <div class="telnum">
+                    <label for="tel">中国 0086</label>
+                    <input type="tel" name="tel" id="tel" placeholder="建议使用常用手机号">
+                    <p>验证完成后，你可以通过该手机登录或找回密码</p>
+                    <i></i>
+                </div>
+                <div class="clearboth"></div>
+                <input type="button" id="code" value="点击按钮进行验证">
+                <div class="codenumbox">
+                    <label for="codenum">手机验证码</label>
+                    <input type="text" name="codenum" placeholder="输入验证码" id="codenum">
+                    <div class="time">120s后获取</div>
+                </div>
+                <b>验证码已发送，120s内输入有效</b>
+                <button id="next">下一步</button>
+            </form>
+            <form action="" class="two">
+                <div class="user">
+                    <label for="user">
+                        用户名
+                    </label>
+                    <input type="text" name="username" id="username">
+                    <i></i>
+                </div>
+                <div class="password">
+                    <label for="pwd1">设置密码</label>
+                    <input type="password" name="pwd1" id="pwd1">
+                    <i></i>
+                </div>
+                <div class="password">
+                    <label for="pwd2">确认密码</label>
+                    <input type="password" name="pwd2" id="pwd2">
+                    <i></i>
+                </div>
+                <input type="submit" value="立即注册">
+            </form>
+            <section>
+                <span>企业用户注册</span>
+                <span>国际站注册</span>
+            </section>
+        </div>
+    </div>
+    <main>
+        <p>恭喜您sadas</p>
+        <p>您已成功注册为京东用户，祝您购物愉快～</p>
+        <div>去购物</div>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="http://">关于我们</a>
+            </li> |
+            <li>
+                <a href="http://">联系我们</a>
+            </li> |
+            <li>
+                <a href="http://">人才招聘</a>
+            </li> |
+            <li>
+                <a href="http://">商家入驻</a>
+            </li> |
+            <li>
+                <a href="http://">广告服务</a>
+            </li> |
+            <li>
+                <a href="http://">手机京东</a>
+            </li> |
+            <li>
+                <a href="http://">友情链接</a>
+            </li> |
+            <li>
+                <a href="http://">销售联盟</a>
+            </li> |
+            <li>
+                <a href="http://">京东社区</a>
+            </li> |
+            <li>
+                <a href="http://">京东公益</a>
+            </li>
+            <li>
+                <a href="http://">English Site</a>
+            </li>
+        </ul>
+        <p>Copyright©2004-2018 京东JD.com 版权所有</p>
+    </footer>
+</body>
+<script src="js/resgin.js"></script>
+<script>
+    $("input[type=button]").attr("disabled", true);
+    $(".two input[type='submit']").attr("disabled", true);
+    $("#next").attr("disabled",true);
+    var re = /^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\d{8}$/;
+    $("#tel").click(function () {
+        $(this).css({
+            "border-color": "black"
+        });
+        $("form p").css({
+            "display": "block"
+        });
+    })
+    $("#tel").on("input", function () {
+        $("input[type=button]").attr("disabled", !re.test(this.value))
+        if (re.test(this.value)) {
+            $(".one p").text("验证完成后，你可以通过该手机登录或找回密码");
+            $(".one p").removeClass("err");
+            $(".one i").css({
+                "display": "block"
+            });
+        } else {
+            $(".one p").addClass("err");
+            $(".one p").text("格式错误");
+        }
+    })
+
+    // $("#next").attr("disabled","false")
+    t = 119;
+    $("#code").click(function () {
+        $.ajax({
+            url: "/setcode",
+            data: {
+                tel: $("#tel").val(),
+                code: code
+            },
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                if(data==1){
+                   $(".one p").text("用户已存在");
+                   $(".one p").css({"color":"red"});
+                   $(".one i").css({
+                        "display": "none"
+                    });
+                }else{
+                    $("#code").css({
+                        "display": "none"
+                    });
+                    $(".codenumbox").css({
+                        "display": "flex"
+                    });
+                    $(".one b").css({
+                        "display": "inline"
+                    })
+                    $(".one p").css({"color":"#999"});
+                    var interval = setInterval(function () {
+                        $(".time").text(t + 's后获取');
+                        t--;
+                        if (t == 0) {
+                            // 清除定时器
+                            clearInterval(t);
+
+                            $(".time").text("获取验证码");
+                        }
+                    }, 1000);
+                }
+            },
+            error: function () {
+                console.log(arguments);
+            }
+        });
+    });
+
+    function getCode() {
+        var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz0123456789"
+        // 将其切成数组，在乱序 ，打乱顺序后截取前4个值，再拼接成字符串
+        var code = str.split("").sort(function () {
+            return Math.random() - 0.5;
+        }).slice(0, 4).join("");
+        return code;
+    }
+    var code = getCode();
+    // 发送验证码
+    console.log(code);
+    $("#codenum").on("input", function () {
+        if ($(this).val() == code) {
+            $("#next").attr("disabled", false);
+            $(".one b").text("验证码正确");
+            $(".one b").css({
+                "color": "green"
+            });
+        } else {
+            $(".one b").text("验证码错误");
+            $(".one b").css({
+                "color": "red"
+            });
+        }
+    })
+    $("#next").click(function (e) {
+        e.preventDefault();
+        $(".one").css({
+            "display": "none"
+        });
+        $(".two").css({
+            "display": "block"
+        });
+        $(".line_left").addClass("line_green");
+        $(".num2 span").addClass('green');
+        $(".num2 p").addClass("text_green");
+
+    })
+
+
+    var x = 0;
+    var y=0
+    $("#username").on("input", function () {
+        var re = /^[a-zA-Z]{2,10}$/;
+        if (re.test(this.value)) {
+            $(this).next().addClass("success");
+            $(this).next().removeClass("text_err");
+            $(this).next().text("");
+            x = 1;
+        } else {
+            $(this).next().text("格式错误");
+            $(this).next().addClass("text_err");
+            $(this).next().removeClass("success");
+            x = 0;
+        }
+        $.ajax({
+            url:"register/had",
+            type:'post',
+            dataType:'json',
+            data:{username:$("#username").val()},
+            success:function(data){
+                if(data==1){
+                    $("#username").next().text("用户名已存在");
+                    $("#username").next().addClass("text_err");
+                    $("#username").next().removeClass("success");
+                    x=0;
+                    console.log(x);
+                }else{
+                    $("#username").next().addClass("success");
+                    $("#username").next().removeClass("text_err");
+                    $("#username").next().text("");
+                    x=1;
+                }
+            }
+        })
+    })
+    $("#pwd1").on('input', function () {
+        var re = /^[0-9a-zA-Z]{6,10}$/;
+        if (re.test(this.value)) {
+            console.log(x);
+            $(this).next().addClass("success");
+            $(this).next().removeClass("text_err");
+            $(this).next().text("");
+            y = 1;
+
+        } else {
+            $(this).next().text("格式错误");
+            $(this).next().addClass("text_err");
+            y = 0;
+        }
+    });
+    $("#pwd2").on('input', function () {
+        if ($(this).val() == $("#pwd1").val()) {
+            $(this).next().addClass("success");
+            $(this).next().removeClass("text_err");
+            $(this).next().text("");
+            if (x == 1 && y==1) {
+                $(".two input[type='submit']").attr("disabled", false);
+            }
+        } else {
+            $(this).next().text("二次输入密码不正确");
+            $(this).next().removeClass("success");
+            $(this).next().addClass("text_err");
+        }
+    });
+    $(".two input[type='submit']").click(function(e){
+        e.preventDefault();
+        console.log(1);
+        $.ajax({
+            url:"/register",
+            type:"post",
+            dataType:"json",
+            data:{username:$("#username").val() , password:$("#pwd2").val()}
+        }).done(function(data){
+            if(data.h==0){
+                $(".container").css({"display":"none"});
+                $("main").css({"display":"block"});
+                $("main p:nth-child(1)").text("恭喜您 "+data.username);
+            }
+        })
+    })
+</script>
+
+</html>

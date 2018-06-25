@@ -1,0 +1,26 @@
+{
+  "name": "jd",
+  "version": "1.0.0",
+  "description": "echo“＃jd”>> README.md  git init  git add README.md  git commit -m“第一次提交”  git remote add origin https://github.com/yzend/jd.git  git push -u origin master",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzend/jd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yzend/jd/issues"
+  },
+  "homepage": "https://github.com/yzend/jd#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "fs": "^0.0.1-security",
+    "superagent": "^3.8.3"
+  }
+}

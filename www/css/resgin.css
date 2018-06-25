@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    height: 50px;
+    width: 160px;
+    display: inline-block;
+    background-image: url("../static/icon.png");
+    background-repeat: no-repeat;
+    margin-top: 26px;
+    float: left;
+
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    /* border: 1px solid red; */
+    box-shadow: 1px -2px 20px rgba(153, 153, 153, 0.8);
+}
+
+.logo-con {
+    width: 80%;
+    min-width: 1210px;
+    margin: auto;
+}
+
+.logo-con .text {
+    font-size: 24px;
+    float: left;
+    margin-top: 40px;
+}
+
+.header-right {
+    float: right;
+    margin-top: 55px;
+    color: rgb(153, 153, 153);
+}
+
+.header-right a {
+    color: rgb(238, 34, 34);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.container {
+    width: 400px;
+    margin: 80px auto 0;
+}
+
+.container_top {
+    position: relative;
+}
+
+.container .num {
+    text-align: center;
+    font-size: 14px;
+    float: left;
+}
+
+.num span {
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    background-position: -45px -200px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ccc;
+    background-image: url("static/reg-icon.png")
+}
+
+.num p {
+    color: #999;
+    font-size: 12px;
+}
+
+.green {
+    background-position: 0 -200px !important;
+    color: #fff !important;
+}
+
+.text_green {
+    color: #3b4 !important;
+}
+
+.line {
+    background-image: url("../static/reg-icon.png");
+    width: 124px;
+    height: 10px;
+    background-position: 0 -100px;
+    position: absolute;
+    top: 7px;
+}
+
+.line_left {
+    left: 55px;
+}
+
+.line_right {
+    left: 228px;
+}
+
+.line_green {
+    background-position: 0 -130px !important;
+}
+
+.num2 {
+    margin-left: 106px;
+}
+
+.num3 {
+    margin-left: 112px;
+}
+
+form label {
+    width: 87px;
+    height: 50px;
+    font-size: 14px;
+    border: 1px solid rgb(221, 221, 221);
+    line-height: 50px;
+    display: inline-block;
+    padding-left: 20px;
+    float: left;
+    border-right: 0;
+}
+
+form input {
+    height: 50px;
+    padding: 0;
+    border: 1px solid rgb(221, 221, 221);
+    /* outline-color: black; */
+    outline: none;
+}
+
+#tel {
+    float: left;
+    width: 290px;
+}
+
+#code {
+    margin-top: 50px;
+    width: 400px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+#code:hover {
+    border-color: #999;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    background-color: #e2231a;
+    color: white;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.main form span {
+    width: 400px;
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.main section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main section span {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
+
+.main section span:nth-child(1)::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-image: url("static/reg-icon.png");
+    background-position: 0 -160px;
+    vertical-align: -8px;
+    margin-right: 5px;
+}
+
+.main section span:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-image: url("static/reg-icon.png");
+    background-position: -40px -160px;
+    vertical-align: -8px;
+    margin-right: 5px;
+}
+
+ul {
+    width: 80%;
+    margin: 20px auto 0;
+    list-style: none;
+    display: flex;
+    color: #999;
+    justify-content: space-between;
+}
+
+.telnum:hover #tel {
+    border-color: #999;
+}
+
+.telnum:hover label {
+    border-color: #999;
+}
+
+li a {
+    font-size: 12px;
+    color: #999;
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 250px;
+    border-top: 1px solid rgba(153, 153, 153, 0.2);
+}
+
+#tel {
+    text-align: center;
+}
+
+.one {
+    position: relative;
+}
+
+.one p {
+    display: none;
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    top: 60px;
+}
+
+.err {
+    color: rgb(209, 209, 0) !important;
+}
+
+.one i {
+    width: 26px;
+    height: 26px;
+    /* display: block; */
+    background-image: url("static/reg-icon.png");
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: none;
+}
+
+#codenum {
+    /* margin-top: 50px; */
+    width: 190px;
+    /* display: none; */
+    border-left: none;
+    text-align: center;
+}
+
+.codenumbox {
+    margin-top: 50px;
+    /* display: flex; */
+    width: 400px;
+    display: none;
+}
+
+.time {
+    width: 100px;
+    border: #999;
+    background-color: #999;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+}
+
+.one b {
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+    /* line-height: 20px; */
+    display: none;
+}
+
+.one {
+    display: block;
+}
+.two {
+    display: none;
+}
+
+.two div {
+    width: 400px;
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+}
+
+.two div label {
+    /* text-align: center; */
+    text-align: justify;
+}
+
+.two div input {
+    width: 290px;
+    border-left: none;
+    
+}
+
+input[type="submit"] {
+    width: 400px;
+    margin-top: 40px;
+    background-color: #e2231a;
+    color: white;
+    font-size: 16px;
+}
+
+.success {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url("../static/reg-icon.png");
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.text_err{
+    display: block;
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    top: 63px;
+    font-style: normal;
+}
+main{
+    margin-top:300px;
+    text-align: center;
+    display: none;
+}
+main p:nth-child(1){
+    font-size: 24px;
+}
+main p:nth-child(2){
+    font-size: 20px;
+    color: #999;
+}
+main div{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
