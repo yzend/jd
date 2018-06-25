@@ -1,1 +1,20 @@
-[{"username":"qwe","password":"qweqwe","tel":"17705927643","shopcar":[]},{"username":"qqq","password":"qqqqqq","tel":"18888888888","shopcar":[]},{"username":"qweq","password":"qweqwe","shopcar":[]},{"username":"qwee","password":"qweqwe","tel":"13999999999","shopcar":[]}]
+[{
+    "username": "qwe",
+    "password": "qweqwe",
+    "tel": "17705927643",
+    "shopcar": []
+}, {
+    "username": "qqq",
+    "password": "qqqqqq",
+    "tel": "18888888888",
+    "shopcar": []
+}, {
+    "username": "qweq",
+    "password": "qweqwe",
+    "shopcar": []
+}, {
+    "username": "qwee",
+    "password": "qweqwe",
+    "tel": "13999999999",
+    "shopcar": []
+}]

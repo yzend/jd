@@ -33,7 +33,7 @@ app.get("/setcode",function(req,res){
 })
 
 app.post("/register",function(req,res){
-    console.log(req.body);
+    
         req.body.tel=tel;
         req.body.shopcar=[];
         usersarr.push(req.body);
@@ -61,14 +61,41 @@ app.post("/register/had",function(req,res){
          res.json("0");
      }
 })
+app.post("/login",function(req,res){
+    console.log(req.body);
+    // res.json(req.body)
+    var have=usersarr.find(function(e){
+        return (e.username==req.body.username || req.body.username==e.tel);
+    })
+    // console.log(have);
+    if(have){
+        if(req.body.pwd==have.password){
+            res.json({
+                "code":1,
+                "username":req.body.username,
+                "text":"密码正确"
+            })
+        }else{
+            res.json({
+                "code":0,
+                "text":"密码错误"
+            })
+        }
+    }else{
+        res.json({
+            "code":0,
+            "text":"用户名错误"
+        })
+    }
+})
 
 fs.readFile("www/json/user.json",function(err,data){
     if(!err){
         // console.log(data.toString());
         usersarr=JSON.parse(data);
-        console.log(usersarr);
+        // console.log(usersarr);
     }else{
-        console.log(err);
+        // console.log(err);
     }
    
 })

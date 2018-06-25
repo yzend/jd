@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登录</title>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.cookie.js"></script>
 </head>
 
 <body>
@@ -53,6 +55,20 @@
                             更安全
                         </div>
                     </section>
+                </div>
+                <div class="box_main_two">
+                    <form action="">
+                        <div class="username">
+                            <label for="username"></label>
+                            <input type="text" required name="username" placeholder="邮箱/用户/已验证手机" id="username">
+                        </div>
+                        <div class="password">
+                            <label for="pwd"></label>
+                            <input type="password" required name="pwd" placeholder="密码" id="pwd">
+                        </div>
+                        <p><i></i> 忘记密码</p>
+                        <button>登   录</button>
+                    </form>
                 </div>
                 <div class="box_footer">
                     <ul>
@@ -113,5 +129,44 @@
         <p>Copyright©2004-2018 京东JD.com 版权所有</p>
     </footer>
 </body>
-
+<script>
+    $(".sec .left").click(function(){
+        $(".box_main_one").css({"display":"block"});
+        $(".box_main_two").css({"display":"none"});
+    })
+    $(".sec .right").click(function(){
+        $(".box_main_one").css({"display":"none"});
+        $(".box_main_two").css({"display":"block"});
+    })
+    $("button").click(function(e){
+        e.preventDefault();
+        console.log("登陆")
+        $.ajax({
+            url:"/login",
+            type:"post",
+            dataType:"JSON",
+            data:{username:$("#username").val(),pwd:$("#pwd").val()},
+            success:function(data){
+                console.log(data);
+                if(data.code==1){
+                    console.log("密码和账户正确");
+                    
+                    
+                    var date =new Date();
+                    date.setHours(date.getHours()+3);
+                    $.cookie("username",data.username,{
+                        expires:date
+                    });
+                    console.log($.cookie("username"));
+                    // location.href="index.html";
+                }else{
+                    $(".box_main_two form p i").text("用户名或密码不正确");
+                    console.log("用户名或密码不正确");
+                }
+            }
+        }).done(function(data){
+            console.log(data);
+        })
+    })
+</script>
 </html>

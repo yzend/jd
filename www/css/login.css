@@ -201,6 +201,53 @@ main .w .box .box_main_one section div:nth-child(3) i {
 main .w .box .box_main_one section div:nth-child(2) i {
   background-position: -27px 50%;
 }
+main .w .box .box_main_two {
+  display: none;
+}
+main .w .box .box_main_two form .password label {
+  background-position: -48px 0;
+}
+main .w .box .box_main_two form div {
+  width: 306px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+main .w .box .box_main_two form div label {
+  height: 38px;
+  width: 38px;
+  border: 1px solid #999;
+  background-image: url("../static/pwd-icons-new.png");
+}
+main .w .box .box_main_two form div input {
+  width: 268px;
+  border: 1px solid #999;
+  border-left: none;
+  padding: 10px;
+  outline: none;
+}
+main .w .box .box_main_two form p {
+  font-size: 12px;
+  text-align: right;
+  padding-right: 22px;
+  color: #999;
+}
+main .w .box .box_main_two form p i {
+  float: left;
+  padding-left: 22px;
+  color: #e4393c;
+  font-style: normal;
+}
+main .w .box .box_main_two form button {
+  width: 306px;
+  margin: 0 auto;
+  height: 38px;
+  display: block;
+  background-color: #e4393c;
+  color: white;
+  font-size: 18px;
+  outline: none;
+}
 main .w .box .box_footer {
   background-color: #fcfcfc;
   height: 50px;
@@ -215,10 +262,13 @@ main .w .box .box_footer ul {
 }
 main .w .box .box_footer ul li {
   float: left;
+  font-size: 12px;
+  color: #999;
 }
 main .w .box .box_footer ul li a {
   text-decoration: none;
   color: #e4393c;
+  font-size: 12px;
 }
 main .w .box .box_footer ul li i {
   width: 19px;
