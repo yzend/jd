@@ -1,0 +1,367 @@
+.clearboth {
+  clear: both;
+}
+header > section {
+  position: relative;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f0f3ef;
+}
+header {
+  background-color: #e3e4e5;
+  color: #999;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+header section {
+  width: 1190px;
+  margin: 0 auto;
+  display: flex;
+  height: 30px;
+  border-bottom: 1px solid #ddd;
+  background-color: #e3e4e5;
+  justify-content: space-between;
+}
+header section .left {
+  margin-left: 210px;
+  position: relative;
+}
+header section .left .img {
+  width: 190px ;
+  height: 170px;
+  background-image: url("../static/sprite-head.png");
+  position: absolute;
+  top: 0px;
+  left: -210px;
+  box-shadow: 0 -12px 10px rgba(0, 0, 0, 0.2);
+}
+header section .left .loc {
+  padding: 0 5px;
+  line-height: 30px;
+  font-size: 12px;
+}
+header section .left .loc:hover {
+  background-color: white;
+}
+header section .left .loc:hover .didian {
+  display: block;
+}
+header section .left .loc i {
+  color: #f10215;
+}
+header section .left .loc .didian {
+  position: absolute;
+  top: 29px;
+  left: -1px;
+  background-color: white;
+  display: none;
+  width: 333px;
+  height: 333px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+header section .left .loc .didian .top {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+header section .left .loc .didian .top ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header section .left .loc .didian .top ul li {
+  width: 60px;
+  height: 24px;
+  display: inline-block;
+}
+header section .left .loc .didian .top ul li a {
+  color: #999;
+  padding: 0 10px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  text-decoration: none;
+}
+header section .left .loc .didian .top ul li:hover a {
+  background-color: #f10215;
+  color: white;
+}
+header section .left .loc .didian .bottom p {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+header section .left .loc .didian .bottom section {
+  display: inline-block;
+  width: 49%;
+  padding-left: 20px;
+  background-color: white;
+  border-bottom: none;
+}
+header section .left .loc .didian .bottom section i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: -5px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAbCAYAAADYtRcLAAAAAklEQVR4AewaftIAAALFSURBVO3BTYhVVQAA4O9cn454xr+F0dA1FbOwQDBOgkFQizYtslzUokhCyBZCUWRBm9JVWSujRSW1iRDBCMKiaNMiqQ5URIU/pOgNRaJMHME3+m7PrpHKTMHj8Rim+b5Q17W/VSkNYzMewM04hD04jp1lzm2XCSG4Wt2lR6HLVb4Yvr7Wo5ZLqpRuxF4s949RvICleLVKaXuZ81EDNHpmlssFjdp/a+mqUhrGXix3pTfLnDv4uUrpKWyvUnq2zPmcAblp068EdAhFbe41HQGnTxbqTqBAbVwtjc1Y7kp7MaNKaWmZ85Ey57Eqpc/xGHaYQLj9Pf20+MVT/hIQOfTlDGd/v2DVXagxhmBcLY37cARLEDTuwUK8oatKaQ7ewgHsMCgHNeYFh3+Mdm9dZOTO+81fsMeSeIQLqI2r0PiozHkZTmhsw+P4tMy51ngfC7DSoBXoDPltf3L83Byj7aX++OkO9YUZFCbU0ggaBzGC3WXO31cpjeiqUgpYg4CZ/sUPp5/Tq1uMYwUKdM6J60+497pTOoe3mHnrYmFlzRhq42pptDTW4SV8XKX0LR7VVeZcVyk9iA/xlQE6tnW+i2rMLo5aNW+YMOzsrsrRsblCMKGWxi9VSivKnA9iU5XSK3ga31UpPVzm/FmZ8ydVShsx0wDtf32RRq2lRkdjnvMCgokUGjvxZJXSLI1dGMW1eERXldIcrME7BijGthjbYhwzFM8bih1DsWMonhfjmBjbYmyLsS3GthjbYmyLsS3Ude2iKqUSW/BamfOBKqUNeBvLsBAbsa3M+aRLQggms8IlZc4VnsHdVUovYwPO4HmsxhNlzidNmzZt2v9RqKn1KBBc5d2R1bUePXT8m6CPWvps3aF9ehZn66fCFNbSZ2tvW2+yKExhLXWtZyGYzFr6bN/Xe/RqOM7WT4UprKXPPrhhrcmiMIX9CRYv4u0MBGIsAAAAAElFTkSuQmCC);
+}
+header section .left .loc .didian .bottom section span {
+  text-align: left;
+}
+header section .left .loc .didian .bottom section:nth-child(2) i {
+  background-position: -20px 0;
+}
+header section .left .loc .didian .bottom section:nth-child(3) i {
+  background-position: 0 -17px;
+}
+header section .left .loc .didian .bottom section:nth-child(4) i {
+  background-position: -40px 0;
+}
+header section .right {
+  width: 800px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: 5px;
+  line-height: 28px;
+  margin: 0px;
+}
+header section .right li {
+  font-size: 12px;
+  line-height: 30px;
+}
+header section .right li:hover {
+  color: #f10215;
+}
+header section .right li a {
+  text-decoration: none;
+  color: #f10215;
+}
+header section .right li .meun_one {
+  width: 300px;
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0px;
+  top: 29px;
+  background: white;
+  z-index: 2;
+}
+header section .right li .meun_one .top {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+header section .right li .meun_one .bottom {
+  padding: 10px;
+}
+header section .right li .meun_one dl {
+  margin: 0;
+}
+header section .right li .meun_one dl dd {
+  display: block;
+  float: left;
+  width: 45%;
+  padding: 5px;
+  color: #999;
+}
+header section .right li .meun_one dl dd:hover {
+  color: #f10215;
+}
+header section .right #myjd {
+  padding: 0 10px;
+  position: relative;
+}
+header section .right #myjd:hover {
+  background-color: white;
+}
+header section .right #myjd:hover .meun_one {
+  display: block;
+}
+header section .right #qiye {
+  padding: 0 10px;
+  position: relative;
+}
+header section .right #qiye .meun_one {
+  width: 180px;
+}
+header section .right #qiye:hover {
+  background-color: white;
+}
+header section .right #qiye:hover .meun_one {
+  display: block;
+}
+header section .right #kf {
+  padding: 0 10px;
+  position: relative;
+}
+header section .right #kf dt {
+  color: black;
+  padding: 0 5px;
+}
+header section .right #kf .meun_one {
+  width: 180px;
+}
+header section .right #kf:hover {
+  background-color: white;
+}
+header section .right #kf:hover .meun_one {
+  display: block;
+}
+header section .right #wz {
+  padding: 0 10px;
+}
+header section .right #wz dt {
+  color: black;
+  padding: 0 5px;
+}
+header section .right #wz .meun_one {
+  width: 1153px;
+  left: 14px;
+  display: none;
+}
+header section .right #wz .meun_one div {
+  border: none;
+  padding: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+header section .right #wz .meun_one div dt {
+  margin: 10px 0;
+}
+header section .right #wz .meun_one .top {
+  width: 350px;
+}
+header section .right #wz .meun_one .bottom {
+  width: 267px;
+}
+header section .right #wz .meun_one .three {
+  width: 267px;
+}
+header section .right #wz .meun_one .four {
+  width: 267px;
+}
+header section .right #wz .meun_one dd {
+  width: 82px;
+}
+header section .right #wz:hover {
+  background-color: white;
+}
+header section .right #wz:hover .meun_one {
+  display: flex;
+}
+nav {
+  overflow: hidden;
+  width: 1190px;
+  margin: 0 auto;
+  height: 140px;
+  position: relative;
+}
+nav .search {
+  width: 565px;
+  margin: 20px auto 0px;
+  overflow: hidden;
+}
+nav .search form .form-group {
+  display: flex;
+}
+nav .search form .form-group input {
+  width: 500px;
+  border-radius: 0;
+}
+nav .search form .form-group button {
+  background-color: #f10215;
+  color: white;
+  border: none;
+  width: 50px;
+  border-radius: 0;
+  font-size: 16px;
+}
+nav .shopcar {
+  position: absolute;
+  right: 60px;
+  top: 30px;
+}
+nav .shopcar button {
+  width: 190px;
+  background-color: white;
+  padding: 5px 5px;
+  color: #f10215;
+  border: 1px solid #cccccc;
+}
+nav .shopcar button sup {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+  border-radius: 509%;
+  color: white;
+  background-color: #f10215;
+  vertical-align: 0px;
+  line-height: 12px;
+}
+nav .flone ul {
+  padding: 0;
+  width: 550px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+}
+nav .flone ul li {
+  font-size: 12px;
+  color: #999;
+  padding: 5px;
+}
+nav .fltwo {
+  padding-top: 5px;
+}
+nav .fltwo ul {
+  padding: 0;
+  width: 700px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  line-height: 20px;
+  vertical-align: 5px;
+}
+nav .fltwo ul li {
+  font-size: 14px;
+  color: black;
+  padding: 5px;
+  vertical-align: 10px;
+  padding-top: 2px;
+}
+.nav_banner {
+  width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.nav_banner div {
+  border: 1px solid red;
+  box-sizing: border-box;
+  height: 400px;
+  margin-right: 7px;
+}
+.nav_banner .left {
+  float: left;
+  width: 190px;
+  height: 400px;
+}
+.nav_banner .middle {
+  float: left;
+  display: flex;
+}
+.nav_banner .middle .m_left {
+  width: 590px;
+}
+.nav_banner .middle .m_right {
+  width: 190px;
+}
+.nav_banner .right {
+  float: left;
+  width: 190px;
+  margin-right: 0px;
+}

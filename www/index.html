@@ -8,16 +8,337 @@
     <title>首页</title>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/jquery.cookie.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    
-    
+    <header>
+        <section>
+            <div class="left">
+                <div class="img"></div>
+                <div class="loc">
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                    北京
+                    
+                    <div class="didian">
+                        <div class="top">
+                            <ul>
+                                <li><a href=""> 北京</a></li>
+                                <li><a href=""> 上海</a></li>
+                                <li><a href=""> 天津</a></li>
+                                <li><a href=""> 重庆</a></li>
+                                <li><a href=""> 河北</a></li>
+                                <li><a href=""> 山西</a></li>
+                                <li><a href=""> 河南</a></li>
+                                <li><a href=""> 辽宁</a></li>
+                                <li><a href=""> 吉林</a></li>
+                                <li><a href=""> 黑龙江</a></li>
+                                <li><a href=""> 内蒙古</a></li>
+                                <li><a href=""> 江苏</a></li>
+                                <li><a href=""> 山东</a></li>
+                                <li><a href=""> 安徽</a></li>
+                                <li><a href=""> 浙江</a></li>
+                                <li><a href=""> 福建</a></li>
+                                <li><a href=""> 湖北</a></li>
+                                <li><a href=""> 湖南</a></li>
+                                <li><a href=""> 广东</a></li>
+                                <li><a href=""> 广西</a></li>
+                                <li><a href=""> 江西</a></li>
+                                <li><a href=""> 四川</a></li>
+                                <li><a href=""> 海南</a></li>
+                                <li><a href=""> 贵州</a></li>
+                                <li><a href=""> 云南</a></li>
+                                <li><a href=""> 西藏</a></li>
+                                <li><a href=""> 陕西</a></li>
+                                <li><a href=""> 甘肃</a></li>
+                                <li><a href=""> 青海</a></li>
+                                <li><a href=""> 宁夏</a></li>
+                                <li><a href=""> 新疆</a></li>
+                                <li><a href=""> 港澳</a></li>
+                                <li><a href=""> 台湾</a></li>
+                                <li><a href=""> 钓鱼岛</a></li>
+                                <li><a href=""> 海外</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <p>Available Sites</p>
+                            <section>
+                                <i></i>
+                                <span>Global Site</span>
+                            </section>
+                            <section>
+                                <i></i>
+                                <span>Сайт России</span>
+                            </section>
+                            <section>
+                                <i></i>
+                                <span>Situs Indonesia</span>
+                            </section>
+                            <section>
+                                <i></i>
+                                <span>Sitio de España</span>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="right">
+                <li>你好，请先登录
+                    <a href="resgin.html">免费注册</a>
+                </li> |
+                <li>我的订单</li> |
+                <li id="myjd">我的京东
+                        <i class="glyphicon glyphicon-menu-down"></i>
+                    <div class="meun_one">
+                        <div class="top">
+                            <dl>
+                                <dd>待处理订单</dd>
+                                <dd>消息</dd>
+                                <dd>返修退换货</dd>
+                                <dd>我的问答</dd>
+                                <dd>降价商品</dd>
+                                <dd>我的关注</dd>
+                                <div class="clearboth"></div>
+                            </dl>
+                        </div>
+                        <div class="bottom">
+                            <dl>
+                                <dd>我的京豆</dd>
+                                <dd>我的优惠券</dd>
+                                <dd>我的白条</dd>
+                                <dd>我的理财</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li> |
+                <li>京东会员</li> |
+                <li id="qiye">企业采购
+                    <i class="glyphicon glyphicon-menu-down"></i>
+                    <div class="meun_one">
+                            <div class="top">
+                                <dl>
+                                    <dd>企业购</dd>
+                                    <dd>商用场景馆</dd>
+                                    <dd>工业品</dd>
+                                    <dd>礼品卡</dd>
+                                    <div class="clearboth"></div>
+                                </dl>
+                            </div>
+                </li> |
+                <li id="kf">客户服务
+                    <i class="glyphicon glyphicon-menu-down"></i>
+                    <div class="meun_one">
+                            <div class="top">
+                                <dl>
+                                    <dt>客户</dt>
+                                    <dd>帮助中心</dd>
+                                    <dd>售后服务</dd>
+                                    <dd>在线客服</dd>
+                                    <dd>意见建议</dd>
+                                    <dd>电话服务</dd>
+                                    <dd>客服邮箱</dd>
+                                    <dd>金融咨询</dd>
+                                    <dd>全球售客服</dd>
+                                    <div class="clearboth"></div>
+                                </dl>
+                            </div>
+                            <div class="bottom">
+                                <dl>
+                                    <dt>商户</dt>
+                                    <dd>合作招商</dd>
+                                    <dd>学习中心</dd>
+                                    <dd>商家后台</dd>
+                                    <dd>京麦工作台</dd>
+                                    <dd>商家帮助</dd>
+                                    <dd>规则平台</dd>
+                                </dl>
+                            </div>
+                        </div>
+                </li> |
+                <li id="wz">网站导航
+                    <i class="glyphicon glyphicon-menu-down"></i>
+                    <div class="meun_one">
+                            <div class="top">
+                                <dl>
+                                    <dt>特色主题</dt>
+                                    <dd>京东试用</dd>
+                                    <dd>京东金融</dd>
+                                    <dd>全球售</dd>
+                                    <dd>国际站</dd>
+                                    <dd>京东会员</dd>
+                                    <dd>京东预售</dd>
+                                    <dd>买什么</dd>
+                                    <dd>俄语站</dd>
+                                    <dd>装机大师</dd>
+                                    <dd>0元评测</dd>
+                                    <dd>定期送</dd>
+                                    <dd>港澳售</dd>
+                                    <dd>优惠券</dd>
+                                    <dd>秒杀</dd>
+                                    <dd>闪购</dd>
+                                    <dd>印尼站</dd>
+                                    <dd>京东金融科技</dd>
+                                    <dd>In货推荐</dd>
+                                    <dd>陪伴计划</dd>
+                                    <dd>出海找啥</dd>
+                                    <div class="clearboth"></div>
+                                </dl>
+                            </div>
+                            <div class="bottom">
+                                    <dl>
+                                        <dt>行业频道</dt>
+                                        <dd>手机</dd>
+                                        <dd>智能数码</dd>
+                                        <dd>玩3C</dd>
+                                        <dd>电脑办公</dd>
+                                        <dd>家用电器</dd>
+                                        <dd>京东智能</dd>
+                                        <dd>服装城</dd>
+                                        <dd>京东生鲜</dd>
+                                        <dd>家装城</dd>
+                                        <dd>母婴</dd>
+                                        <dd>食品</dd>
+                                        <dd>农资频道</dd>
+                                        <dd>整车</dd>
+                                        <dd>图书</dd>
+                                        <dd>京东元器件</dd>
+                                        <div class="clearboth"></div>
+                                    </dl>
+                            </div>
+                            <div class="three">
+                                <dl>
+                                    <dt>生活服务</dt>
+                                    <dd>京东众筹</dd>
+                                    <dd>白条</dd>
+                                    <dd>京东金融App</dd>
+                                    <dd>京东小金库</dd>
+                                    <dd>理财</dd>
+                                    <dd>智能家电</dd>
+                                    <dd>话费</dd>
+                                    <dd>水电煤</dd>
+                                    <dd>电影票</dd>
+                                    <dd>京东到到家</dd>
+                                    <dd>游戏</dd>
+                                    <div class="clearboth"></div>
+                                </dl>
+                            </div>
+                            <div class="four">
+                                <dl>
+                                    <dt>更多精选</dt>
+                                    <dd>合作招商</dd>
+                                    <dd>京东通信</dd>
+                                    <dd>京东E卡</dd>
+                                    <dd>企业采购</dd>
+                                    <dd>服务市场</dd>
+                                    <dd>办公生活管</dd>
+                                    <dd>乡村招募</dd>
+                                    <dd>校园加盟</dd>
+                                    <dd>京友邦</dd>
+                                    <dd>京东社区</dd>
+                                    <dd>游戏社区</dd>
+                                    <dd>知识产权维权</dd>
+                                    <div class="clearboth"></div>
+                                </dl>
+                            </div>
+                        </div>
+                </li> |
+                <li>手机京东</li>
+            </ul>
+        </section>
+
+    </header>
+    <nav>
+        <div class="search">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="电视">
+                    <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="shopcar">
+            <button><i class="glyphicon glyphicon-shopping-cart"></i> 我的购物车<sup>0</sup></button>
+        </div>
+        <div class="flone">
+            <ul>
+                <li style="color: red;">车载充电器</li>
+                <li>品质家居</li>
+                <li>京选厨具</li>
+                <li>直降3000</li>
+                <li>满100-30</li>
+                <li>精选玩具</li>
+                <li>家装建材</li>
+                <li>内禽蛋奶</li>
+                <li>0元试用</li>
+            </ul>
+        </div>
+        <div class="fltwo">
+            <ul>
+                <li >秒杀</li> 
+                <li>优惠券</li> 
+                <li>PLUS会员</li> 
+                <li>闪购</li> |
+                <li>拍卖</li> 
+                <li>京东服饰</li> 
+                <li>京东超市</li> 
+                <li>生鲜</li> |
+                <li>全球购</li> 
+                <li>京东金融</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="nav_banner">
+        <div class="left">
+            
+        </div>
+        <div class="middle">
+            <div class="m_left">
+
+            </div>
+            <div class="m_right">
+
+            </div>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
 </body>
 <script>
-    $.cookie("username",{
-        expires:-1
+    var listdataOne=[];
+    $(document).ready(function(){
+            $.getJSON({
+            url:'json/list.json',
+            success:function(data){
+                var str='';
+                listdataOne=data;
+                console.log(listdataOne);
+                listdataOne.forEach(function (e) { 
+                    var some='';
+                    var d = e.content.length;
+                    var s='';
+                    for(var i=0;i<d;i++){
+                        s += ('<a href="">'+e.content[i] +'</a>')
+                        if(i!=(d-1)){
+                            s+="/";
+                        } 
+                    }
+                    some += ('<li>'+s+ '</li>');
+                    str+= some;
+                 })
+                 console.log(str);
+                $(".nav_banner .left").html('<ul>'+str+ '</ul>');
+            }
+        })
     })
+    
+    // console.log(data);
+    // $.cookie("username", {
+    //     expires: -1
+    // })
     // console.log( $.cookie("username")!="[object Object]");
 </script>
+
 </html>
