@@ -9,8 +9,10 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/jquery.cookie.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/js/swiper.min.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
 </head>
 
 <body>
@@ -21,45 +23,115 @@
                 <div class="loc">
                     <i class="glyphicon glyphicon-map-marker"></i>
                     北京
-                    
+
                     <div class="didian">
                         <div class="top">
                             <ul>
-                                <li><a href=""> 北京</a></li>
-                                <li><a href=""> 上海</a></li>
-                                <li><a href=""> 天津</a></li>
-                                <li><a href=""> 重庆</a></li>
-                                <li><a href=""> 河北</a></li>
-                                <li><a href=""> 山西</a></li>
-                                <li><a href=""> 河南</a></li>
-                                <li><a href=""> 辽宁</a></li>
-                                <li><a href=""> 吉林</a></li>
-                                <li><a href=""> 黑龙江</a></li>
-                                <li><a href=""> 内蒙古</a></li>
-                                <li><a href=""> 江苏</a></li>
-                                <li><a href=""> 山东</a></li>
-                                <li><a href=""> 安徽</a></li>
-                                <li><a href=""> 浙江</a></li>
-                                <li><a href=""> 福建</a></li>
-                                <li><a href=""> 湖北</a></li>
-                                <li><a href=""> 湖南</a></li>
-                                <li><a href=""> 广东</a></li>
-                                <li><a href=""> 广西</a></li>
-                                <li><a href=""> 江西</a></li>
-                                <li><a href=""> 四川</a></li>
-                                <li><a href=""> 海南</a></li>
-                                <li><a href=""> 贵州</a></li>
-                                <li><a href=""> 云南</a></li>
-                                <li><a href=""> 西藏</a></li>
-                                <li><a href=""> 陕西</a></li>
-                                <li><a href=""> 甘肃</a></li>
-                                <li><a href=""> 青海</a></li>
-                                <li><a href=""> 宁夏</a></li>
-                                <li><a href=""> 新疆</a></li>
-                                <li><a href=""> 港澳</a></li>
-                                <li><a href=""> 台湾</a></li>
-                                <li><a href=""> 钓鱼岛</a></li>
-                                <li><a href=""> 海外</a></li>
+                                <li>
+                                    <a href=""> 北京</a>
+                                </li>
+                                <li>
+                                    <a href=""> 上海</a>
+                                </li>
+                                <li>
+                                    <a href=""> 天津</a>
+                                </li>
+                                <li>
+                                    <a href=""> 重庆</a>
+                                </li>
+                                <li>
+                                    <a href=""> 河北</a>
+                                </li>
+                                <li>
+                                    <a href=""> 山西</a>
+                                </li>
+                                <li>
+                                    <a href=""> 河南</a>
+                                </li>
+                                <li>
+                                    <a href=""> 辽宁</a>
+                                </li>
+                                <li>
+                                    <a href=""> 吉林</a>
+                                </li>
+                                <li>
+                                    <a href=""> 黑龙江</a>
+                                </li>
+                                <li>
+                                    <a href=""> 内蒙古</a>
+                                </li>
+                                <li>
+                                    <a href=""> 江苏</a>
+                                </li>
+                                <li>
+                                    <a href=""> 山东</a>
+                                </li>
+                                <li>
+                                    <a href=""> 安徽</a>
+                                </li>
+                                <li>
+                                    <a href=""> 浙江</a>
+                                </li>
+                                <li>
+                                    <a href=""> 福建</a>
+                                </li>
+                                <li>
+                                    <a href=""> 湖北</a>
+                                </li>
+                                <li>
+                                    <a href=""> 湖南</a>
+                                </li>
+                                <li>
+                                    <a href=""> 广东</a>
+                                </li>
+                                <li>
+                                    <a href=""> 广西</a>
+                                </li>
+                                <li>
+                                    <a href=""> 江西</a>
+                                </li>
+                                <li>
+                                    <a href=""> 四川</a>
+                                </li>
+                                <li>
+                                    <a href=""> 海南</a>
+                                </li>
+                                <li>
+                                    <a href=""> 贵州</a>
+                                </li>
+                                <li>
+                                    <a href=""> 云南</a>
+                                </li>
+                                <li>
+                                    <a href=""> 西藏</a>
+                                </li>
+                                <li>
+                                    <a href=""> 陕西</a>
+                                </li>
+                                <li>
+                                    <a href=""> 甘肃</a>
+                                </li>
+                                <li>
+                                    <a href=""> 青海</a>
+                                </li>
+                                <li>
+                                    <a href=""> 宁夏</a>
+                                </li>
+                                <li>
+                                    <a href=""> 新疆</a>
+                                </li>
+                                <li>
+                                    <a href=""> 港澳</a>
+                                </li>
+                                <li>
+                                    <a href=""> 台湾</a>
+                                </li>
+                                <li>
+                                    <a href=""> 钓鱼岛</a>
+                                </li>
+                                <li>
+                                    <a href=""> 海外</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="bottom">
@@ -85,12 +157,14 @@
                 </div>
             </div>
             <ul class="right">
-                <li>你好，请先登录
+                <li id="username_top">
+                    <a href="login.html" style="color: #999">你好，请先登录</a>
+                    
                     <a href="resgin.html">免费注册</a>
                 </li> |
                 <li>我的订单</li> |
                 <li id="myjd">我的京东
-                        <i class="glyphicon glyphicon-menu-down"></i>
+                    <i class="glyphicon glyphicon-menu-down"></i>
                     <div class="meun_one">
                         <div class="top">
                             <dl>
@@ -117,132 +191,132 @@
                 <li id="qiye">企业采购
                     <i class="glyphicon glyphicon-menu-down"></i>
                     <div class="meun_one">
-                            <div class="top">
-                                <dl>
-                                    <dd>企业购</dd>
-                                    <dd>商用场景馆</dd>
-                                    <dd>工业品</dd>
-                                    <dd>礼品卡</dd>
-                                    <div class="clearboth"></div>
-                                </dl>
-                            </div>
+                        <div class="top">
+                            <dl>
+                                <dd>企业购</dd>
+                                <dd>商用场景馆</dd>
+                                <dd>工业品</dd>
+                                <dd>礼品卡</dd>
+                                <div class="clearboth"></div>
+                            </dl>
+                        </div>
                 </li> |
                 <li id="kf">客户服务
                     <i class="glyphicon glyphicon-menu-down"></i>
                     <div class="meun_one">
-                            <div class="top">
-                                <dl>
-                                    <dt>客户</dt>
-                                    <dd>帮助中心</dd>
-                                    <dd>售后服务</dd>
-                                    <dd>在线客服</dd>
-                                    <dd>意见建议</dd>
-                                    <dd>电话服务</dd>
-                                    <dd>客服邮箱</dd>
-                                    <dd>金融咨询</dd>
-                                    <dd>全球售客服</dd>
-                                    <div class="clearboth"></div>
-                                </dl>
-                            </div>
-                            <div class="bottom">
-                                <dl>
-                                    <dt>商户</dt>
-                                    <dd>合作招商</dd>
-                                    <dd>学习中心</dd>
-                                    <dd>商家后台</dd>
-                                    <dd>京麦工作台</dd>
-                                    <dd>商家帮助</dd>
-                                    <dd>规则平台</dd>
-                                </dl>
-                            </div>
+                        <div class="top">
+                            <dl>
+                                <dt>客户</dt>
+                                <dd>帮助中心</dd>
+                                <dd>售后服务</dd>
+                                <dd>在线客服</dd>
+                                <dd>意见建议</dd>
+                                <dd>电话服务</dd>
+                                <dd>客服邮箱</dd>
+                                <dd>金融咨询</dd>
+                                <dd>全球售客服</dd>
+                                <div class="clearboth"></div>
+                            </dl>
                         </div>
+                        <div class="bottom">
+                            <dl>
+                                <dt>商户</dt>
+                                <dd>合作招商</dd>
+                                <dd>学习中心</dd>
+                                <dd>商家后台</dd>
+                                <dd>京麦工作台</dd>
+                                <dd>商家帮助</dd>
+                                <dd>规则平台</dd>
+                            </dl>
+                        </div>
+                    </div>
                 </li> |
                 <li id="wz">网站导航
                     <i class="glyphicon glyphicon-menu-down"></i>
                     <div class="meun_one">
-                            <div class="top">
-                                <dl>
-                                    <dt>特色主题</dt>
-                                    <dd>京东试用</dd>
-                                    <dd>京东金融</dd>
-                                    <dd>全球售</dd>
-                                    <dd>国际站</dd>
-                                    <dd>京东会员</dd>
-                                    <dd>京东预售</dd>
-                                    <dd>买什么</dd>
-                                    <dd>俄语站</dd>
-                                    <dd>装机大师</dd>
-                                    <dd>0元评测</dd>
-                                    <dd>定期送</dd>
-                                    <dd>港澳售</dd>
-                                    <dd>优惠券</dd>
-                                    <dd>秒杀</dd>
-                                    <dd>闪购</dd>
-                                    <dd>印尼站</dd>
-                                    <dd>京东金融科技</dd>
-                                    <dd>In货推荐</dd>
-                                    <dd>陪伴计划</dd>
-                                    <dd>出海找啥</dd>
-                                    <div class="clearboth"></div>
-                                </dl>
-                            </div>
-                            <div class="bottom">
-                                    <dl>
-                                        <dt>行业频道</dt>
-                                        <dd>手机</dd>
-                                        <dd>智能数码</dd>
-                                        <dd>玩3C</dd>
-                                        <dd>电脑办公</dd>
-                                        <dd>家用电器</dd>
-                                        <dd>京东智能</dd>
-                                        <dd>服装城</dd>
-                                        <dd>京东生鲜</dd>
-                                        <dd>家装城</dd>
-                                        <dd>母婴</dd>
-                                        <dd>食品</dd>
-                                        <dd>农资频道</dd>
-                                        <dd>整车</dd>
-                                        <dd>图书</dd>
-                                        <dd>京东元器件</dd>
-                                        <div class="clearboth"></div>
-                                    </dl>
-                            </div>
-                            <div class="three">
-                                <dl>
-                                    <dt>生活服务</dt>
-                                    <dd>京东众筹</dd>
-                                    <dd>白条</dd>
-                                    <dd>京东金融App</dd>
-                                    <dd>京东小金库</dd>
-                                    <dd>理财</dd>
-                                    <dd>智能家电</dd>
-                                    <dd>话费</dd>
-                                    <dd>水电煤</dd>
-                                    <dd>电影票</dd>
-                                    <dd>京东到到家</dd>
-                                    <dd>游戏</dd>
-                                    <div class="clearboth"></div>
-                                </dl>
-                            </div>
-                            <div class="four">
-                                <dl>
-                                    <dt>更多精选</dt>
-                                    <dd>合作招商</dd>
-                                    <dd>京东通信</dd>
-                                    <dd>京东E卡</dd>
-                                    <dd>企业采购</dd>
-                                    <dd>服务市场</dd>
-                                    <dd>办公生活管</dd>
-                                    <dd>乡村招募</dd>
-                                    <dd>校园加盟</dd>
-                                    <dd>京友邦</dd>
-                                    <dd>京东社区</dd>
-                                    <dd>游戏社区</dd>
-                                    <dd>知识产权维权</dd>
-                                    <div class="clearboth"></div>
-                                </dl>
-                            </div>
+                        <div class="top">
+                            <dl>
+                                <dt>特色主题</dt>
+                                <dd>京东试用</dd>
+                                <dd>京东金融</dd>
+                                <dd>全球售</dd>
+                                <dd>国际站</dd>
+                                <dd>京东会员</dd>
+                                <dd>京东预售</dd>
+                                <dd>买什么</dd>
+                                <dd>俄语站</dd>
+                                <dd>装机大师</dd>
+                                <dd>0元评测</dd>
+                                <dd>定期送</dd>
+                                <dd>港澳售</dd>
+                                <dd>优惠券</dd>
+                                <dd>秒杀</dd>
+                                <dd>闪购</dd>
+                                <dd>印尼站</dd>
+                                <dd>京东金融科技</dd>
+                                <dd>In货推荐</dd>
+                                <dd>陪伴计划</dd>
+                                <dd>出海找啥</dd>
+                                <div class="clearboth"></div>
+                            </dl>
                         </div>
+                        <div class="bottom">
+                            <dl>
+                                <dt>行业频道</dt>
+                                <dd>手机</dd>
+                                <dd>智能数码</dd>
+                                <dd>玩3C</dd>
+                                <dd>电脑办公</dd>
+                                <dd>家用电器</dd>
+                                <dd>京东智能</dd>
+                                <dd>服装城</dd>
+                                <dd>京东生鲜</dd>
+                                <dd>家装城</dd>
+                                <dd>母婴</dd>
+                                <dd>食品</dd>
+                                <dd>农资频道</dd>
+                                <dd>整车</dd>
+                                <dd>图书</dd>
+                                <dd>京东元器件</dd>
+                                <div class="clearboth"></div>
+                            </dl>
+                        </div>
+                        <div class="three">
+                            <dl>
+                                <dt>生活服务</dt>
+                                <dd>京东众筹</dd>
+                                <dd>白条</dd>
+                                <dd>京东金融App</dd>
+                                <dd>京东小金库</dd>
+                                <dd>理财</dd>
+                                <dd>智能家电</dd>
+                                <dd>话费</dd>
+                                <dd>水电煤</dd>
+                                <dd>电影票</dd>
+                                <dd>京东到到家</dd>
+                                <dd>游戏</dd>
+                                <div class="clearboth"></div>
+                            </dl>
+                        </div>
+                        <div class="four">
+                            <dl>
+                                <dt>更多精选</dt>
+                                <dd>合作招商</dd>
+                                <dd>京东通信</dd>
+                                <dd>京东E卡</dd>
+                                <dd>企业采购</dd>
+                                <dd>服务市场</dd>
+                                <dd>办公生活管</dd>
+                                <dd>乡村招募</dd>
+                                <dd>校园加盟</dd>
+                                <dd>京友邦</dd>
+                                <dd>京东社区</dd>
+                                <dd>游戏社区</dd>
+                                <dd>知识产权维权</dd>
+                                <div class="clearboth"></div>
+                            </dl>
+                        </div>
+                    </div>
                 </li> |
                 <li>手机京东</li>
             </ul>
@@ -254,12 +328,17 @@
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="电视">
-                    <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                    <button type="submit" class="btn btn-default">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
                 </div>
             </form>
         </div>
         <div class="shopcar">
-            <button><i class="glyphicon glyphicon-shopping-cart"></i> 我的购物车<sup>0</sup></button>
+            <button>
+                <i class="glyphicon glyphicon-shopping-cart"></i> 我的购物车
+                <sup>0</sup>
+            </button>
         </div>
         <div class="flone">
             <ul>
@@ -276,68 +355,1959 @@
         </div>
         <div class="fltwo">
             <ul>
-                <li >秒杀</li> 
-                <li>优惠券</li> 
-                <li>PLUS会员</li> 
+                <li>秒杀</li>
+                <li>优惠券</li>
+                <li>PLUS会员</li>
                 <li>闪购</li> |
-                <li>拍卖</li> 
-                <li>京东服饰</li> 
-                <li>京东超市</li> 
+                <li>拍卖</li>
+                <li>京东服饰</li>
+                <li>京东超市</li>
                 <li>生鲜</li> |
-                <li>全球购</li> 
+                <li>全球购</li>
                 <li>京东金融</li>
             </ul>
         </div>
     </nav>
     <div class="nav_banner">
-        <div class="left">
-            
+        <div class="box_left">
+
         </div>
         <div class="middle">
             <div class="m_left">
-
+                <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                        <li data-target="#myCarousel" data-slide-to="7"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="static/1.jpg" alt="First slide">
+                        </div>
+                        <div class="item">
+                            <img src="static/2.jpg" alt="Second slide">
+                        </div>
+                        <div class="item">
+                            <img src="static/3.jpg" alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src="static/4.jpg" alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src="static/5.jpg" alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src="static/6.jpg" alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src="static/7.jpg" alt="Third slide">
+                        </div>
+                        <div class="item">
+                            <img src="static/8.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
             <div class="m_right">
+                <img src="static/j1.jpg" alt="">
+                <img src="static/j2.png" alt="">
+                <img src="static/j3.jpg" alt="">
+            </div>
+        </div>
+        <div class="box_right">
+            <div class="user">
+                <div class="user_logo">
+                    <a href="">
+                        <img src="static/user.jpg" alt="">
+                    </a>
+                </div>
+                <div class="user_show">
+                    <p id="username">Hi~欢迎来到京东</p>
+                    <p id="user_out">
+                        <a href="login.html">登录</a>
+                        <a href="resgin.html">注册</a>
+                    </p>
+                </div>
+                <div class="user_card">
+                    <a href="">新人福利</a>
+                    <a href="">PLUS会员</a>
+                </div>
+                <div class="user_news">
+                    <div class="news_top">
+                        <span>促销</span>
+                        <span>|</span>
+                        <span>公告</span>
+                        <span>
+                            <a href="">更多</a>
+                        </span>
+                    </div>
+                    <div class="news_main">
+                        <div class="news_item_one">
+                            <p>京东打印，印制美好生活</p>
+                            <p>家电每满3000减300</p>
+                            <p>数码好物0元试用</p>
+                            <p>小狗吸尘器 满500减50</p>
+                        </div>
+                        <div class="news_item_two">
+                            <p>京东PLUS会员权益更新及会</p>
+                            <p>京东启用全新客服电话</p>
+                            <p>关于召回普利司通（天津）</p>
+                            <p>京东物流推出配送员统一外</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="user_bottom">
+                    <section>
+                        <img src="static/话费.png" alt="">
+                        <p>话费</p>
+                    </section>
+                    <section>
+                        <img src="static/机票.png" alt="">
+                        <p>机票</p>
+                    </section>
+                    <section>
+                        <img src="static/酒店.png" alt="">
+                        <p>酒店</p>
+                    </section>
+                    <section>
+                        <img src="static/游戏.png" alt="">
+                        <p>游戏</p>
+                    </section>
+                    <section>
+                        <img src="static/企业.png" alt="">
+                        <p>企业购</p>
+                    </section>
+                    <section>
+                        <img src="static/加油卡.png" alt="">
+                        <p>加油卡</p>
+                    </section>
+                    <section>
+                        <img src="static/我的电影票.png" alt="">
+                        <p>电影票</p>
+                    </section>
+                    <section>
+                        <img src="static/火车票.png" alt="">
+                        <p>火车票</p>
+                    </section>
+                    <section>
+                        <img src="static/我要众筹.png" alt="">
+                        <p>众筹</p>
+                    </section>
+                    <section>
+                        <img src="static/理财.png" alt="">
+                        <p>理财</p>
+                    </section>
+                    <section>
+                        <img src="static/礼品.png" alt="">
+                        <p>礼品卡</p>
+                    </section>
+                    <section>
+                        <img src="static/京东白条.png" alt="">
+                        <p>白条</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <section class="clearboth"></section>
+    </div>
+    <main>
+        <div class="main_top">
+            <div class="time">
+                <h1>京东秒杀</h1>
+                <p>FLASH DEALS</p>
+                <i></i>
+                <span>本场距离结束还剩</span>
+                <div class="times">
+                    <div class="hour">
+                        <span>00</span>
+                    </div>
+                    <div class="min">
+                        <span>38</span>
+                    </div>
+                    <div class="sec">
+                        <span>04</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="shop">
+                <div class="shop_left">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="//img14.360buyimg.com/jdcms/s440x440_jfs/t2701/339/3742786439/286035/360d9dc/5799855bN85f1ca23.jpg!q90" alt="">
+                                </div>
+                                <p>富居(FOOJO)地毯加柔长绒客厅卧室地毯70*160cm灰色</p>
+                                <div class="price">
+                                    <span class="new_price">￥59.00</span>
+                                    <span class="old_price">
+                                        <del>￥99.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="//img13.360buyimg.com/jdcms/s440x440_jfs/t7978/23/1296705844/176621/2bc79668/599bc906N09d54861.jpg!q90" alt="">
+                                </div>
+                                <p>神火（supfire）x60强光手电筒 变焦远射USB充电式 家用便携 户外骑行灯</p>
+                                <div class="price">
+                                    <span class="new_price">￥79.00</span>
+                                    <span class="old_price">
+                                        <del>￥99.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="//img13.360buyimg.com/jdcms/s440x440_g9/M01/10/1D/rBEHaVDO6-wIAAAAAACozjmUP4AAADTmQOorpcAAKjm919.jpg!q90" alt="">
+                                </div>
+                                <p>飞利浦（PHILIPS）电动剃须刀 全身水洗 刮胡刀 RQ311</p>
+                                <div class="price">
+                                    <span class="new_price">￥219.00</span>
+                                    <span class="old_price">
+                                        <del>￥239.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="//img10.360buyimg.com/jdcms/s440x440_jfs/t9568/249/436200132/151845/93ee566c/59cf57d9N5251bd51.jpg!q90" alt="">
+                                </div>
+                                <p>亿色(ESR)苹果7&8 Plus手机壳 iPhone7 plus&8 Plus手机壳 5.5英寸手机套 透明轻薄硅胶防摔软壳 初色零感 白</p>
+                                <div class="price">
+                                    <span class="new_price">￥15.90</span>
+                                    <span class="old_price">
+                                        <del>￥16.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="//img11.360buyimg.com/jdcms/s440x440_jfs/t5038/71/1257343991/164787/ee782d32/58eed330Nd735a7f9.jpg!q90" alt="">
+                                </div>
+                                <p>美好家简易衣柜 布衣柜 多功能衣橱 钢管107有侧布军绿</p>
+                                <div class="price">
+                                    <span class="new_price">￥69.00</span>
+                                    <span class="old_price">
+                                        <del>￥99.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="//img11.360buyimg.com/jdcms/s440x440_jfs/t2107/2/2608543560/575384/e24813cf/57104589N705bbb92.jpg!q90" alt="">
+                                </div>
+                                <p>迪士尼DISNEY 宝宝爬行垫 婴儿拼接爬爬垫 泡沫拼图防滑地垫游戏毯加厚2CM 60*60cm</p>
+                                <div class="price">
+                                    <span class="new_price">￥79.00</span>
+                                    <span class="old_price">
+                                        <del>￥99.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="//img12.360buyimg.com/jdcms/s440x440_jfs/t9352/127/339817462/290357/d06c0c89/59a65991Nf01b2553.jpg!q90" alt="">
+                                </div>
+                                <p>博朗（BRAUN）欧乐B D12013 清亮型电动牙刷</p>
+                                <div class="price">
+                                    <span class="new_price">￥159.00</span>
+                                    <span class="old_price">
+                                        <del>￥179.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="//img13.360buyimg.com/jdcms/s440x440_jfs/t3187/102/4952394299/253517/59b2f4c5/585cd849Ne53e3f0b.jpg!q90" alt="">
+                                </div>
+                                <p>佰客喜 天蓝色 浸塑金属衣架 20支装 JS00301</p>
+                                <div class="price">
+                                    <span class="new_price">￥24.90</span>
+                                    <span class="old_price">
+                                        <del>￥49.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img">
+                                    <img src="//img11.360buyimg.com/jdcms/s440x440_jfs/t9088/150/747194587/195594/305624f2/59ae507cN69e41e34.jpg!q90" alt="">
+                                </div>
+                                <p>3M 汽车内除味剂 新车除味除甲醛净化空气清新剂 除异味汽车用品 PN38200车内除甲醛 两瓶</p>
+                                <div class="price">
+                                    <span class="new_price">￥135.00</span>
+                                    <span class="old_price">
+                                        <del>￥199.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="shop_right">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="static/l1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="static/l2.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="y_ph">
+            <section class="y_paihang ">
+                <div class="z_box_title  ">
+                    <p class="z_title">排行榜</p>
+                    <b class="z_goright">></b>
+                    <small class="z_sm_title">专属你的购物指南</small>
+                </div>
+                <div class="main">
+                    <ul>
+                        <li>手机通讯
+                            <div class="lanbox active">
+                                <!-- Swiper -->
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="lunbox">
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c1.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: red">1</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c1.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: #ed713d">2</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c1.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: #feb185">3</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="lunbox">
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">4</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">5</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">6</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>大家电
+                            <div class="lanbox">
+                                <!-- Swiper -->
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="lunbox">
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c3.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: red">1</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c3.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: #ed713d">2</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c3.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: #feb185">3</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="lunbox">
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c3.webp" alt="">
+                                                    </div>
+                                                    <div class="num">4</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c3.webp" alt="">
+                                                    </div>
+                                                    <div class="num">5</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c3.webp" alt="">
+                                                    </div>
+                                                    <div class="num">6</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>生活电器
+                            <div class="lanbox">
+                                <!-- Swiper -->
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="lunbox">
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c4.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: red">1</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c4.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: #ed713d">2</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c4.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: #feb185">3</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="lunbox">
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">4</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">5</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">6</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>厨房小电
+                            <div class="lanbox">
+                                <!-- Swiper -->
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="lunbox">
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c5.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: red">1</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c5.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: #ed713d">2</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c5.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: #feb185">3</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="lunbox">
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">4</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">5</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">6</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>电脑整机
+                            <div class="lanbox">
+                                <!-- Swiper -->
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="lunbox">
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c6.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: red">1</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c6.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: #ed713d">2</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c6.webp" alt="">
+                                                    </div>
+                                                    <div class="num" style="color: #feb185">3</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="lunbox">
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">4</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">5</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                                <div class="clearboth"></div>
+                                                <div class="lan">
+                                                    <div class="imgbox">
+                                                        <img src="static/c2.webp" alt="">
+                                                    </div>
+                                                    <div class="num">6</div>
+                                                    <span>【白条免息】Apple iPhone X (A1865) 256GB 银色 移动联通电信4G手机</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="y_zhuanji z_box">
+                <div class="z_box_title  ">
+                    <p class="z_title">会买专辑</p>
+                    <b class="z_goright">></b>
+                    <small class="z_sm_title">甄选优质好物</small>
+                </div>
+                <div class="z_box_main">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="banner">
+                                    <img src="static/v1.webp" alt="">
+                                </div>
+                                <ul>
+                                    <li>
+                                        <img src="static/v2.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="static/v3.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="static/v4.jpg" alt="">
+                                    </li>
+                                </ul>
+                                <div class="content">
+                                    <h4>黄金转运珠手链，温婉女生正能量满满</h4>
+                                    <p>人的情绪一天无穷变，有的时候受挫了，听什么看什么做什么都是蒙着一层晦暗色，急需心里安慰，不妨试试黄金转运珠手链，手链中点缀些黄金更显优雅大方，彰显品味，举手投足之间，尽是温婉女人味，精致亮泽的设计毫不张扬的入了眼，越看越舒坦，带给你无限的正能量和好运气。</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banner">
+                                    <img src="static/v2.jpg" alt="">
+                                </div>
+                                <ul>
+                                    <li>
+                                        <img src="static/v2.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="static/v3.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="static/v4.jpg" alt="">
+                                    </li>
+                                </ul>
+                                <div class="content">
+                                    <h4>机械游戏键盘，给你畅快游戏手感</h4>
+                                    <p>作为玩游戏最重要的外设之一，机械游戏键盘是非常重要的，随着硬件性能的不断升级，游戏的趣味性、</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="y_lingjuan z_box ">
+                <div class="z_box_title  ">
+                    <p class="z_title">领卷中心</p>
+                    <b class="z_goright">></b>
+                    <small class="z_sm_title">前往领卷中心</small>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="lingjuanbox">
+                                <div class="lingjuan" style="background-color: #f6f6f6">
+                                    <div class="imgbox">
+                                        <img src="static/b1.webp" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p class="lingjuan_2">
+                                            <span class="fuhao">￥</span>10</p>
+                                        <span>满200元可用</span>
+                                        <p class="last">全品类(除特殊商品)</p>
+                                    </div>
+                                    <span class="content_right">更多精选好劵
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="lingjuan" style="background-color: #eeefed">
+                                    <div class="imgbox">
+                                        <img src="static/b1.webp" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p class="lingjuan_2">
+                                            <span class="fuhao">￥</span>10</p>
+                                        <span>满200元可用</span>
+                                        <p class="last">全品类(除特殊商品)</p>
+                                    </div>
+                                    <span class="content_right">更多精选好劵
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="lingjuan" style="background-color: #f6f6f6">
+                                    <div class="imgbox">
+                                        <img src="static/b1.webp" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p class="lingjuan_2">
+                                            <span class="fuhao">￥</span>10</p>
+                                        <span>满200元可用</span>
+                                        <p class="last">全品类(除特殊商品)</p>
+                                    </div>
+                                    <span class="content_right">更多精选好劵
+                                        <i></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="lingjuanbox">
+                                <div class="lingjuan" style="background-color: #f6f6f6">
+                                    <div class="imgbox">
+                                        <img src="static/b1.webp" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p class="lingjuan_2">
+                                            <span class="fuhao">￥</span>10</p>
+                                        <span>满200元可用</span>
+                                        <p class="last">全品类(除特殊商品)</p>
+                                    </div>
+                                    <span class="content_right">更多精选好劵
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="lingjuan" style="background-color: #eeefed">
+                                    <div class="imgbox">
+                                        <img src="static/b1.webp" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p class="lingjuan_2">
+                                            <span class="fuhao">￥</span>10</p>
+                                        <span>满200元可用</span>
+                                        <p class="last">全品类(除特殊商品)</p>
+                                    </div>
+                                    <span class="content_right">更多精选好劵
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="lingjuan" style="background-color: #f6f6f6">
+                                    <div class="imgbox">
+                                        <img src="static/b1.webp" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <p class="lingjuan_2">
+                                            <span class="fuhao">￥</span>10</p>
+                                        <span>满200元可用</span>
+                                        <p class="last">全品类(除特殊商品)</p>
+                                    </div>
+                                    <span class="content_right">更多精选好劵
+                                        <i></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+        <div class="box">
+            <div class="faxian">
+                <section class="y_zhuanji z_box">
+                    <div class="z_box_title  ">
+                        <p class="z_title">觅me</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">探索生活</small>
+                    </div>
+                    <div class="z_box_main">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="banner">
+                                        <img src="static/c7.webp" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>黄金转运珠手链，温婉女生正能量满满</h4>
+                                        <p>人的情绪一天无穷变，有的时候受挫了，听什么看什么做什么都是蒙着一层晦暗色，急需心里安慰，不妨试试黄金转运珠手链，手链中点缀些黄金更显优雅大方，彰显品味，举手投足之间，尽是温婉女人味，精致亮泽的设计毫不张扬的入了眼，越看越舒坦，带给你无限的正能量和好运气。</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="banner">
+                                        <img src="static/c8.webp" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>机械游戏键盘，给你畅快游戏手感</h4>
+                                        <p>作为玩游戏最重要的外设之一，机械游戏键盘是非常重要的，随着硬件性能的不断升级，游戏的趣味性、</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="z_box mime">
+                    <div class="z_box_title">
+                        <p class="z_title">发现好货</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">发现品质生活</small>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/351.jpg" alt="">
+                        <h4>松下电动剃须刀</h4>
+                        <h5>智能3刀头为男士新净洁而来，刚柔并济紧密配......</h5>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/352.jpg" alt="">
+                        <h4>360全面双摄手</h4>
+                        <h5>360手机N6Pro的机身</h5>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/353.jpg" alt="">
+                        <h4>松下变频风冷空调</h4>
+                        <h5>这款变频风冷三门冰箱选自松下</h5>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/354.jpg" alt="">
+                        <h4>铁三角动员耳机</h4>
+                        <h5>四单元动铁发声单元，标准的HIFI发烧级入耳式耳机</h5>
+                    </div>
+                </section>
+                <section class="z_box mime">
+                    <div class="z_box_title">
+                        <span class="z_title">会逛</span>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">你想逛的都在这里</small>
+                    </div>
+                    <div class="w_big_img">
+                        <img src="static/299.png" alt="">
+                    </div>
+                    <div class="w_small_img">
+                        <img src="static/298.jpg" alt="" class="min_3">
+                        <img src="static/297.jpg" alt="" class="min_3">
+                        <img src="static/296.jpg" alt="" class="min_3">
+                    </div>
+
+                </section>
+            </div>
+            <h1>——— 时尚达人 ———</h1>
+            <div class="shishangbox1">
+                <section class="z_box">
+                    <div class="z_box_title">
+                        <p class="z_title">运动户外</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">玩所未玩</small>
+                    </div>
+                    <div class="z_box_main">
+                        <div>
+                            <img src="static/5b31ec16N6cdb3945.jpg!q90!cc_350x180.jpg" alt="" class="z_big_img">
+                        </div>
+                        <div class="z_box_smimg">
+                            <img src="static/5b31e78cNd83fcb16.jpg!q90!cc_170x180.jpg" alt="">
+                            <img src="static/5b305ef6N743d4eae.jpg!q90!cc_170x180.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="z_box">
+                    <div class="z_box_title">
+                        <p class="z_title">魅力装扮</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">精致生活</small>
+                    </div>
+                    <div class="z_box_main">
+                        <div>
+                            <img src="static/z1.jpg" alt="" class="z_big_img">
+                        </div>
+                        <div class="z_box_smimg">
+                            <img src="static/z2.jpg" alt="">
+                            <img src="static/z3.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="y_img_kuang_right">
+                    <div class="kuang">
+                        <div class="img">
+                            <img src="static/imgbox1.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="shishangbox2">
+                <section class="y_img_kuang_left">
+                    <div class="kuang">
+                        <div class="img">
+                            <img src="static/imgbox2.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class=" mime w_four">
+
+                    <div class="mine_2">
+                        <img src="static/w1.webp" alt="">
+                        <h5>海雯妮 胸针丝巾扣两用胸花女别针饰品围巾扣人造水晶配饰花朵 玫红色</h5>
+                        <span>￥108.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/w2.webp" alt="">
+
+                        <h5>雷米高 ramical狗粮 赛极号三文鱼螺旋藻配方粮 宠物天然狗粮幼犬主粮550g</h5>
+                        <span>￥25.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/w3.webp" alt="">
+
+                        <h5>驾驶证皮套真皮 牛皮超薄机动车行驶证驾照夹女士卡包 粉色加强版</h5>
+                        <span>￥200.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/w4.webp" alt="">
+
+                        <h5>贝罗绮 足金黄金转运珠戒指男女款本命年红绳路路通金珠子 情人七夕生日礼物 戒指款 默认周长5.5-6厘米 0.21克4*7mm</h5>
+                        <span>￥99.00</span>
+                    </div>
+                </section>
+                <section class="z_box mime">
+                    <div class="z_box_title">
+                        <span class="logo">
+                            <img src="static/w5.jpg" alt="">
+                        </span>
+                        <!-- <b class="z_goright">></b> -->
+                        <small class="z_sm_title zt">COACH京东自营店</small>
+                    </div>
+                    <div class="w_big_img">
+                        <img src="static/w6.jpg" alt="">
+                    </div>
+                    <div class="w_small_img">
+                        <img src="static/w7.webp" alt="" class="min_3">
+                        <img src="static/w8.webp" alt="" class="min_3">
+                        <img src="static/w9.webp" alt="" class="min_3">
+                    </div>
+
+                </section>
+            </div>
+            <div class="shishangbox3">
+                <section class="z_box mime">
+                    <div class="z_box_title">
+                        <span class="z_title">京东服饰</span>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title ">尽享时尚生活</small>
+                    </div>
+                    <div class="w_big_img">
+                        <img src="static/w10.jpg" alt="">
+                    </div>
+                    <div class="w_small_img">
+                        <img src="static/w11.webp" alt="" class="min_3">
+                        <img src="static/w12.webp" alt="" class="min_3">
+                        <img src="static/w13.webp" alt="" class="min_3">
+                    </div>
+
+                </section>
+                <section class="z_box">
+                    <div class="z_box_title">
+                        <p class="z_title">我型我塑</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">时尚有我 品质衣橱</small>
+                    </div>
+                    <div class="z_box_main">
+                        <div>
+                            <img src="static/z4.jpg" alt="" class="z_big_img">
+                        </div>
+                        <div class="z_box_smimg">
+                            <img src="static/z5.jpg" alt="">
+                            <img src="static/z6.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="y_two_img_kuang_right">
+                    <div class="kuang">
+                        <div class="img">
+                            <img src="static/imgbox6.jpg" alt="">
+                            <img src="static/imgbox5.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <h1>——— 智能先锋 ———</h1>
+            <div class="zhinengbox1">
+                <section class="z_box">
+                    <div class="z_box_title">
+                        <p class="z_title">手机频道</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">一个极客的诞生</small>
+                    </div>
+                    <div class="z_box_main">
+                        <div class="z_box_smimg">
+                            <img src="static/5b31e78cNd83fcb16.jpg!q90!cc_170x180.jpg" alt="">
+                            <img src="static/5b305ef6N743d4eae.jpg!q90!cc_170x180.jpg" alt="">
+                        </div>
+                        <div class="z_box_telimg">
+                            <ul class="z_box_telimg">
+                                <li>
+                                    <img src="static/5aaf7b8aN0421ba35.jpg!q90.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5aaf65acN0ed14e9c.jpg!q90.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5aaf65c4N3c47a7c7.jpg!q90.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5aaf66a7N598daa6b.jpg!q90.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5aaf664bNf2cf75f0.jpg!q90.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5aaf6391Ncf18bf61.jpg!q90.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5aaf6451N9a2a8029.jpg!q90.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5aaf6582Nd837a5e0.jpg!q90.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5aaf6594N1c00882b.jpg!q90.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5aaf6669N397d93f5.jpg!q90.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5ad95b29N10490eae.png!q90.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="static/5b11242dN79066681.jpg!q90.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="z_box mime">
+                    <div class="z_box_title">
+                        <span class="z_title">新品首发</span>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title ">看新奇好物 必来新品首发</small>
+                    </div>
+                    <div class="w_big_img">
+                        <img src="static/W14.jpg" alt="">
+                    </div>
+
+
+                </section>
+                <section class="y_img_kuang_right">
+                    <div class="kuang">
+                        <div class="img">
+                            <img src="static/imgbox7.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="zhinengbox2">
+                <section class="y_two_img_kuang_left">
+                    <div class="kuang">
+                        <div class="img">
+                            <img src="static/imgbox3.jpg" alt="">
+                            <img src="static/imgbox4.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class=" mime w_four">
+                    <div class="mine_2">
+                        <img src="static/w15.webp" alt="">
+                        <h5>三星（SAMSUNG） 三星 W2018 心系天下 双卡双屏翻盖4G手机 尊铂(6GB RAM+256GB ROM) 全网通</h5>
+                        <span>￥14868.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/w16.webp" alt="">
+
+                        <h5>理想 RISO ZJCV1865 一体化速印机 免费上门安装 一年保修限100万张（此产品不包含耗材）</h5>
+                        <span>￥25.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/w17.webp" alt="">
+
+                        <h5>TP-LINK TL-WN881N 300M无线PCI-E网卡 台式机 WiFi接收器</h5>
+                        <span>￥200.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/w18.webp" alt="">
+
+                        <h5>户外对讲机大功率车载泉盛UV-R50民用50公里5W自驾游迷你对讲机 R50迷彩蓝</h5>
+                        <span>￥99.00</span>
+                    </div>
+                </section>
+                <section class="z_box">
+                    <div class="z_box_title">
+                        <p class="z_title">智能数码</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">智能潮货 嗨购不停</small>
+                    </div>
+                    <div class="z_box_main">
+                        <div>
+                            <img src="static/z7.jpg" alt="" class="z_big_img">
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <img src="static/z8.jpg" alt="" class="z_big_img">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <h1>——— 生活百货 ———</h1>
+            <div class="shenghuobox1">
+                <section class="z_box">
+                    <div class="z_box_title">
+                        <p class="z_title">京东超市</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">精选超值好物</small>
+                    </div>
+                    <div class="z_box_main">
+                        <div>
+                            <img src="static/z9.jpg" alt="" class="z_big_img">
+                        </div>
+                        <div class="z_box_smimg">
+                            <img src="static/z10.jpg" alt="">
+                            <img src="static/z11.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="z_box mime">
+                    <div class="z_box_title">
+                        <span class="logo">
+                            <img src="static/r1.jpg" alt="">
+                        </span>
+                        <!-- <b class="z_goright">></b> -->
+                        <small class="z_sm_title zt">恒都自营旗舰店</small>
+                    </div>
+                    <div class="w_big_img">
+                        <img src="static/r2.jpg" alt="">
+                    </div>
+                    <div class="w_small_img">
+                        <img src="static/r3.webp" alt="" class="min_3">
+                        <img src="static/r4.webp" alt="" class="min_3">
+                        <img src="static/r5.webp" alt="" class="min_3">
+                    </div>
+
+                </section>
+                <section class="y_img_kuang_right">
+                    <div class="kuang">
+                        <div class="img">
+                            <img src="static/imgbox8.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="shenghuobox2">
+                <section class="y_two_img_kuang_left">
+                    <div class="kuang">
+                        <div class="img">
+                            <img src="static/imgbox9.jpg" alt="">
+                            <img src="static/imgbox10.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class=" mime w_four">
+                    <div class="mine_2">
+                        <img src="static/r6.webp" alt="">
+                        <h5>大连淡干海参礼盒无盐渍海参 50g 8-10只 简装 海鲜水产</h5>
+                        <span>￥14868.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/r7.webp" alt="">
+
+                        <h5>OPEN BABY 欧培新生婴幼儿安抚玩具 滑行小鹿 黄色 均码</h5>
+                        <span>￥25.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/r8.webp" alt="">
+
+                        <h5>日本进口 悠诗诗UCC 精品速溶咖啡粉 红职人90g</h5>
+                        <span>￥200.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/r9.webp" alt="">
+
+                        <h5>NUK NUK防滑食物研磨碗宝宝辅食餐具</h5>
+                        <span>￥99.00</span>
+                    </div>
+                </section>
+                <section class="z_box">
+                    <div class="z_box_title">
+                        <p class="z_title">吃喝玩乐</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">为你挑选最好的</small>
+                    </div>
+                    <div class="z_box_main">
+                        <div>
+                            <img src="static/z12.jpg" alt="" class="z_big_img">
+                        </div>
+                        <div class="z_box_smimg">
+                            <img src="static/z13.jpg" alt="">
+                            <img src="static/z14.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <h1>——— 居家优品 ———</h1>
+            <div class="jujiabox1">
+                <section class="y_img_kuang_left">
+                    <div class="kuang">
+                        <div class="img">
+                            <img src="static/imgbox11.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="z_box">
+                    <div class="z_box_title">
+                        <p class="z_title">家电馆</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">家电好物节</small>
+                    </div>
+                    <div class="z_box_main">
+                        <div>
+                            <img src="static/z15.jpg" alt="" class="z_big_img">
+                        </div>
+                        <div class="z_box_smimg">
+                            <img src="static/z16.jpg" alt="">
+                            <img src="static/z17.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="z_box">
+                    <div class="z_box_title">
+                        <p class="z_title">我爱我家</p>
+                        <b class="z_goright">></b>
+                        <small class="z_sm_title">品质生活</small>
+                    </div>
+                    <div class="z_box_main">
+                        <div>
+                            <img src="static/z18.jpg" alt="" class="z_big_img">
+                        </div>
+                        <div class="z_box_smimg">
+                            <img src="static/z19.jpg" alt="">
+                            <img src="static/z20.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="jujiabox2">
+                <section class="z_box mime">
+                    <div class="z_box_title">
+                        <span class="logo">
+                            <img src="static/q1.jpg" alt="">
+                        </span>
+                        <!-- <b class="z_goright">></b> -->
+                        <small class="z_sm_title zt">芝华仕旗舰店</small>
+                    </div>
+                    <div class="w_big_img">
+                        <img src="static/q2.jpg" alt="">
+                    </div>
+                    <div class="w_small_img">
+                        <img src="static/q3.webp" alt="" class="min_3">
+                        <img src="static/q4.webp" alt="" class="min_3">
+                        <img src="static/q5.webp" alt="" class="min_3">
+                    </div>
+                </section>
+                <section class=" mime w_four">
+                    <div class="mine_2">
+                        <img src="static/e1.webp" alt="">
+                        <h5>大连淡干海参礼盒无盐渍海参 50g 8-10只 简装 海鲜水产</h5>
+                        <span>￥14868.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/e2.webp" alt="">
+
+                        <h5>OPEN BABY 欧培新生婴幼儿安抚玩具 滑行小鹿 黄色 均码</h5>
+                        <span>￥25.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/e3.webp" alt="">
+
+                        <h5>日本进口 悠诗诗UCC 精品速溶咖啡粉 红职人90g</h5>
+                        <span>￥200.00</span>
+                    </div>
+                    <div class="mine_2">
+                        <img src="static/e4.webp" alt="">
+
+                        <h5>NUK NUK防滑食物研磨碗宝宝辅食餐具</h5>
+                        <span>￥99.00</span>
+                    </div>
+                </section>
+                <section class="y_two_img_kuang_right">
+                    <div class="kuang">
+                        <div class="img">
+                            <img src="static/imgbox12.jpg" alt="">
+                            <img src="static/imgbox13.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <h1>——— 特色推荐 ———</h1>
+            <div class="tese">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <section class="small_box z_box">
+                                <div class="z_box_title  ">
+                                    <p class="z_title">觅me</p>
+                                    <b class="z_goright">></b>
+                                    <small class="z_sm_title">探索生活</small>
+                                </div>
+                                <div class="z_box_main">
+                                    <div class="banner">
+                                        <img src="static/m1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="small_box z_box">
+                                <div class="z_box_title  ">
+                                    <p class="z_title">觅me</p>
+                                    <b class="z_goright">></b>
+                                    <small class="z_sm_title">探索生活</small>
+                                </div>
+                                <div class="z_box_main">
+                                    <div class="banner">
+                                        <img src="static/m1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="small_box z_box">
+                                <div class="z_box_title  ">
+                                    <p class="z_title">觅me</p>
+                                    <b class="z_goright">></b>
+                                    <small class="z_sm_title">探索生活</small>
+                                </div>
+                                <div class="z_box_main">
+                                    <div class="banner">
+                                        <img src="static/m1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="small_box z_box">
+                                <div class="z_box_title  ">
+                                    <p class="z_title">觅me</p>
+                                    <b class="z_goright">></b>
+                                    <small class="z_sm_title">探索生活</small>
+                                </div>
+                                <div class="z_box_main">
+                                    <div class="banner">
+                                        <img src="static/m1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="small_box z_box">
+                                <div class="z_box_title  ">
+                                    <p class="z_title">觅me</p>
+                                    <b class="z_goright">></b>
+                                    <small class="z_sm_title">探索生活</small>
+                                </div>
+                                <div class="z_box_main">
+                                    <div class="banner">
+                                        <img src="static/m1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="small_box z_box">
+                                <div class="z_box_title  ">
+                                    <p class="z_title">觅me</p>
+                                    <b class="z_goright">></b>
+                                    <small class="z_sm_title">探索生活</small>
+                                </div>
+                                <div class="z_box_main">
+                                    <div class="banner">
+                                        <img src="static/m1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="small_box z_box">
+                                <div class="z_box_title  ">
+                                    <p class="z_title">觅me</p>
+                                    <b class="z_goright">></b>
+                                    <small class="z_sm_title">探索生活</small>
+                                </div>
+                                <div class="z_box_main">
+                                    <div class="banner">
+                                        <img src="static/m1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="small_box z_box">
+                                <div class="z_box_title  ">
+                                    <p class="z_title">觅me</p>
+                                    <b class="z_goright">></b>
+                                    <small class="z_sm_title">探索生活</small>
+                                </div>
+                                <div class="z_box_main">
+                                    <div class="banner">
+                                        <img src="static/m1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="small_box z_box">
+                                <div class="z_box_title  ">
+                                    <p class="z_title">觅me</p>
+                                    <b class="z_goright">></b>
+                                    <small class="z_sm_title">探索生活</small>
+                                </div>
+                                <div class="z_box_main">
+                                    <div class="banner">
+                                        <img src="static/m1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next ">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </div>
+                    <div class="swiper-button-prev ">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                    </div>
+                </div>
+            </div>
+            <h1>——— 京东直播 ———</h1>
+            <div class="onlinebox">
+                <section class="box1 z_box">
+                    <div class="imgbox">
+                        <img src="static/b2.webp" alt="">
+                        <div class="zhe">
+                            <img src="static/zz.png" alt="">
+                            <p>仅限直播优惠</p>
+                        </div>
+                    </div>
+                    <div class="imgbox">
+                        <img src="static/b3.webp" alt="">
+                        <div class="zhe">
+                                <img src="static/zz.png" alt="">
+                                <p>仅限直播优惠</p>
+                            </div>
+                    </div>
+                    <div class="imgbox">
+                        <img src="static/b4.webp" alt="">
+                        <div class="zhe">
+                                <img src="static/zz.png" alt="">
+                                <p>仅限直播优惠</p>
+                            </div>
+                    </div>
+                    <div class="imgbox">
+                        <img src="static/b5.webp" alt="">
+                        <div class="zhe">
+                                <img src="static/zz.png" alt="">
+                                <p>仅限直播优惠</p>
+                            </div>
+                    </div>
+                </section>
+                <section class="box2 z_box">
+                    <div class="imgbox">
+                        <img src="static/B6.webp" alt="">
+                        <div class="zhe">
+                                <img src="static/zz.png" alt="">
+                                <p>仅限直播优惠</p>
+                            </div>
+                    </div>
+                </section>
+                <section class="box1 z_box">
+                    <div class="imgbox">
+                        <img src="static/b7.webp" alt="">
+                        <div class="zhe">
+                                <img src="static/zz.png" alt="">
+                                <p>仅限直播优惠</p>
+                            </div>
+                    </div>
+                    <div class="imgbox">
+                        <img src="static/b8.webp" alt="">
+                        <div class="zhe">
+                                <img src="static/zz.png" alt="">
+                                <p>仅限直播优惠</p>
+                            </div>
+                    </div>
+                    <div class="imgbox">
+                        <img src="static/b9.webp" alt="">
+                        <div class="zhe">
+                                <img src="static/zz.png" alt="">
+                                <p>仅限直播优惠</p>
+                            </div>
+                    </div>
+                    <div class="imgbox">
+                        <img src="static/b10.webp" alt="">
+                        <div class="zhe">
+                                <img src="static/zz.png" alt="">
+                                <p>仅限直播优惠</p>
+                            </div>
+                    </div>
+                </section>
+            </div>
+            <h1>——— 还没逛够 ———</h1>
+            <div class="shopmore">
 
             </div>
         </div>
-        <div class="right">
-            
+    </main>
+    <footer>
+        <div class="footer_top">
+            <section>
+                <i></i>
+                <p>品类齐全，轻松购物</p>
+            </section>
+            <section>
+                <i></i>
+                <p>多仓直发，极速配送</p>
+            </section>
+            <section>
+                <i></i>
+                <p>正品行货，精致服务</p>
+            </section>
+            <section>
+                <i></i>
+                <p>天天低价，畅选无忧</p>
+            </section>
         </div>
-    </div>
+        <div class="line"></div>
+        <div class="footer_main">
+            <div class="footer_main_left">
+                <ul>
+                    <li>
+                        购物指南
+                        <dl>
+                            <dd>购物流程</dd>
+                            <dd>会员介绍</dd>
+                            <dd>生活旅行</dd>
+                            <dd>常见问题</dd>
+                            <dd>大家电</dd>
+                            <dd>联系客服</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        配送方式
+                        <dl>
+                            <dd>上门自提</dd>
+                            <dd>211限时达</dd>
+                            <dd>配送服务查询</dd>
+                            <dd>配送费收取标准</dd>
+                            <dd>海外配送</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        支付方式
+                        <dl>
+                            <dd>货到付款</dd>
+                            <dd>在线支付</dd>
+                            <dd>分期付款</dd>
+                            <dd>邮局汇款</dd>
+                            <dd>公司汇款</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        售后服务
+                        <dl>
+                            <dd>售后政策</dd>
+                            <dd>价格保护</dd>
+                            <dd>退款说明</dd>
+                            <dd>返修/退换货</dd>
+                            <dd>取消订单</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        特色服务
+                        <dl>
+                            <dd>夺宝岛</dd>
+                            <dd>DIY装机</dd>
+                            <dd>延保服务</dd>
+                            <dd>京东E卡</dd>
+                            <dd>京东通信</dd>
+                            <dd>京东JD+</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_main_right">
+                <section>
+                    <h5>京东自营覆盖区县</h5>
+                    <p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+                    <span>查看详情></span>
+                </section>
+            </div>
+        </div>
+        <div class="line" style="margin: 20px 0 20px 0;"></div>
+        <div class="footer_bottom">
+            <ul>
+                <li>关于我们</li> | 
+                <li>联系我们</li> | 
+                <li>联系客服</li> | 
+                <li>合作招商</li> | 
+                <li>商家帮助</li> | 
+                <li>营销中心</li> | 
+                <li>手机京东</li> | 
+                <li>友情链接</li> | 
+                <li>销售联盟</li> | 
+                <li>京东社区</li> | 
+                <li>风险监测</li> | 
+                <li>隐私政策</li> | 
+                <li>京东公益</li> | 
+                <li>English Site</li> | 
+                <li>Media & IR</li>
+            </ul>
+            <p>
+                    <a href="">京公网安备 11000002000088号</a> |  京ICP证070359号| <a href="">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a> | 新出发京零 字第大120007号
+            </p>
+            <p>互联网出版许可证编号新出网证(京)字150号 | <a href="">出版物经营许可证</a> | <a href="">网络文化经营许可证京网文[2014]2148-348号</a> | 违法和不良信息举报电话：4006561155</p>
+            <p>Copyright © 2004 - 2018  京东JD.com 版权所有|消费者维权热线：4006067733经营证照</p>
+            <div class="icon">
+                <section>
+                    <i></i>
+                    <span>Global Site</span>
+                </section> | 
+                <section>
+                    <i></i>
+                    <span>Сайт России</span>
+                </section> | 
+                <section>
+                    <i></i>
+                    <span>Situs Indonesia</span>
+                </section> | 
+                <section>
+                    <i></i>
+                    <span>Sitio de España</span>
+                </section>
+            </div>
+            <p>京东旗下网站：<a href="">京东钱包</a>  | <a href="">京东云</a> </p>
+            <div class="last_img">
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+            </div>
+        </div>
+    </footer>
 </body>
 <script>
-    var listdataOne=[];
+    $(".news_top span:nth-child(3)").hover(function () {
+        $(".news_item_one").css({
+            "display": "none"
+        });
+    });
+    $(".news_top span:nth-child(1)").hover(function () {
+        $(".news_item_one").css({
+            "display": "block"
+        });
+    });
+    $(".y_ph .main li").hover(
+        function () {
+            console.log(1);
+            $(this).children(".lanbox").addClass("active");
+            $(this).siblings().children(".lanbox").removeClass("active");
+        }
+    )
+    var swiper1 = new Swiper('.shop_right .swiper-container', {
+        spaceBetween: 30,
+        pagination: {
+            el: '.shop_right .swiper-pagination',
+            clickable: true,
+        },
+    });
+    var swiper2 = new Swiper('.lanbox .swiper-container', {
+        spaceBetween: 30,
+        pagination: {
+            el: '.lanbox .swiper-pagination',
+            clickable: true,
+        },
+    });
+    var swiper5 = new Swiper('.y_lingjuan .swiper-container', {
+        spaceBetween: 30,
+        pagination: {
+            el: '.y_lingjuan .swiper-pagination',
+            clickable: true,
+        },
+    });
+    var swiper3 = new Swiper('.shop_left .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+            el: '.shop_left .swiper-pagination',
+            clickable: true,
+        },
+    });
+    var swiper4 = new Swiper('.y_zhuanji .swiper-container', {
+        spaceBetween: 30,
+        pagination: {
+            el: '.y_zhuanji .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.y_zhuanji .swiper-button-next',
+            prevEl: '.y_zhuanji .swiper-button-prev',
+        },
+    });
+    var swiper6 = new Swiper('.tese .swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.tese .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.tese .swiper-button-next',
+        prevEl: '.tese .swiper-button-prev',
+      },
+    });
+    
+    // 物品填写
     $(document).ready(function(){
-            $.getJSON({
-            url:'json/list.json',
+        $.ajax({
+            url:"json/test.html",
             success:function(data){
-                var str='';
-                listdataOne=data;
-                console.log(listdataOne);
-                listdataOne.forEach(function (e) { 
-                    var some='';
-                    var d = e.content.length;
-                    var s='';
-                    for(var i=0;i<d;i++){
-                        s += ('<a href="">'+e.content[i] +'</a>')
-                        if(i!=(d-1)){
-                            s+="/";
-                        } 
+                $(".shopmore").html(data);
+                $(".shopmore div span").each(function(){
+                    var t = $(this).text();
+                    $(this).html("￥"+"<i>"+t+"</i>");
+                })
+                $(".shopmore div").append("<section><b>找相似</b></section>");
+                $(".shopmore div").click(function(){
+                    if( $.cookie("username")!="[object Object]"){
+                        var imgsrc = $(this).children("img").attr("src")
+                        console.log(imgsrc);
+                        var content =$(this).children("p").text();
+                        console.log( content);
+                        var price =$(this).children("span").children().text();
+                        console.log(price);
+                        $.post({
+                            url:"/addgoods",
+                            data:{"imgsrc":imgsrc,"content":content,"price":price},
+                            success:function(){
+                                console.log("添加成功");
+                            }
+                        })
+                    }else{
+                        alert("请先登录");
                     }
-                    some += ('<li>'+s+ '</li>');
-                    str+= some;
-                 })
-                 console.log(str);
-                $(".nav_banner .left").html('<ul>'+str+ '</ul>');
+                    
+                })
             }
         })
     })
-    
+    //这里是倒计时
+
+    //var isBegin = false
+    //var tim = null
+    var tim = setInterval(formatTime, 1000);
+
+    function formatTime() {
+        var times = $(".hour span").text() * 3600 + $(".min span").text() * 60 + $(".sec span").text() * 1;
+        if (times <= 0) {
+            clearInterval(tim)
+            return
+        }
+        //每隔一秒执行减一
+        times--
+        //获取小时
+        var h = parseInt(times / 3600);
+        //获取分钟
+        var m = parseInt(times / 60);
+        //获取秒数
+        var s = times % 60;
+
+        $(".hour span").text(h < 10 ? '0' + h : h);
+        $(".min span").text(m < 10 ? '0' + m : m);
+        $(".sec span").text(s < 10 ? '0' + s : s);
+    }
+    var listdataOne = [];
+    $(document).ready(function () {
+        $.getJSON({
+            url: 'json/list.json',
+            success: function (data) {
+                var str = '';
+                listdataOne = data;
+                // console.log(listdataOne);
+                listdataOne.forEach(function (e) {
+                    var some = '';
+                    var d = e.content.length;
+                    var s = '';
+                    for (var i = 0; i < d; i++) {
+                        s += ('<a href="">' + e.content[i] + '</a>')
+                        if (i != (d - 1)) {
+                            s += "/";
+                        }
+                    }
+                    some += ('<li>' + s + "<section class='list'></section>" + '</li>');
+                    str += some;
+                })
+                //  console.log(str);
+                $(".nav_banner .box_left").html('<ul>' + str + '</ul>');
+            }
+        })
+    })
+
+    $(document).ready(function(){
+        $.ajax({
+            url:"json/lunbo.json",
+            success:function(data){
+                // console.log(data);
+                $(".list").each(function (i,e) {
+                    var s1='';
+                    var s2='';
+                    var s3='';
+                    var s4='';
+                    // console.log(i);
+                    data[i].top.forEach(function(e){
+                        // console.log(e);
+                        s1+= "<li>"+ e +' > '+"</li>"
+                    })
+
+                    data[i].two.forEach(function(e,h){
+                        s2 +="<dt>"+ e +' > '+"</dt>" ;
+                        data[i].content[h].forEach(function(e){
+
+                            s2+="<dd>"+e+"</dd>";
+                        }) 
+                        s3 +="<dl>"+s2+"</dl>"
+                        s4+=s3;
+                        s3='';
+                        s2='';
+                        
+                    });
+                    
+                    
+                    var str='<div class="list_left"><div class="top"><ul>'+ s1 +'</ul></div>'+"<div class='bottom'>"+ s4+" </div>"
+                    +'</div><div class="list_right"></div>'
+                    $(this).html(str);
+                })
+                $(".list_right").each(function (i,e) {
+                    $(this).html("<div class='imgboxs'>1</div><div class='imgbox'><img src='"+data[i].imgs[0] +"' alt=''></div><div class='imgbox'><img src='"+data[i].imgs[1] +"' alt=''></div>");
+                    var str2='';
+                    data[i].img.forEach(function (e) {  
+                        str2+="<img src='"+ e +"'>"
+                    })
+                    $(this).children(".imgboxs").html(str2);
+                
+                })
+            }
+        })
+    })
     // console.log(data);
     // $.cookie("username", {
     //     expires: -1
     // })
+   
+    if($.cookie("username")!="[object Object]"){
+        console.log($("#username"))
+        $("#username").text("Hi~ "+$.cookie("username"));
+        $("#username_top").text($.cookie("username"));
+        $("#user_out").css({"display":"block"});
+        $("#user_out").html("<span id='out'>退出</span>");
+        console.log(1);
+        $("#out").click(function(){
+            $.cookie("username", {
+                expires: -1
+            })
+            location.href="index.html";
+        })
+    }
+    console.log($.cookie("username"));
+    
+    
     // console.log( $.cookie("username")!="[object Object]");
 </script>
 
