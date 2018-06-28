@@ -88,6 +88,24 @@ app.post("/login",function(req,res){
         })
     }
 })
+app.post("/addgoods",function(req,res){
+    console.log(req.body);
+    console.log(req.cookies.username);
+    var index=usersarr.findIndex(function(e){
+        return e.username==req.cookies.username;
+     })
+     usersarr[index].shopcar.push(req.body);
+     fs.writeFile("www/json/user.json",JSON.stringify(usersarr),function(err){
+        if(err){
+            console.log("写入失败");
+            res.json("1")
+        }else{
+            console.log("写入成功");
+            res.json("0")
+        }
+    });
+     console.log(usersarr[index]);
+})
 
 fs.readFile("www/json/user.json",function(err,data){
     if(!err){
