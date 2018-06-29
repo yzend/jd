@@ -89,22 +89,86 @@ app.post("/login",function(req,res){
     }
 })
 app.post("/addgoods",function(req,res){
-    console.log(req.body);
-    console.log(req.cookies.username);
+    // console.log(req.body);
+    // console.log(req.cookies.username);
     var index=usersarr.findIndex(function(e){
         return e.username==req.cookies.username;
      })
-     usersarr[index].shopcar.push(req.body);
+     var goodindex =usersarr[index].shopcar.findIndex(function (e) { 
+         console.log(e); 
+        return e.content == req.body.content 
+     })
+     console.log(goodindex);
+    //  没有该商品
+     if(goodindex == -1){
+        req.body.num = 1;
+        usersarr[index].shopcar.push(req.body);
+        console.log( "新商品");
+     }else{
+         usersarr[index].shopcar[goodindex].num++;
+         console.log("更改数量");
+     }
      fs.writeFile("www/json/user.json",JSON.stringify(usersarr),function(err){
         if(err){
             console.log("写入失败");
-            res.json("1")
+            
         }else{
             console.log("写入成功");
-            res.json("0")
+           
         }
     });
-     console.log(usersarr[index]);
+    res.json({
+        "shopcarnum": usersarr[index].shopcar.length
+    })
+    //  console.log(usersarr[index]);
+})
+
+
+
+app.post("/changenum",function(req,res){
+    var index=usersarr.findIndex(function(e){
+        return e.username==req.cookies.username;
+     })
+     var goodindex =usersarr[index].shopcar.findIndex(function (e) { 
+         console.log(e); 
+        return e.content == req.body.good ;
+     })
+     usersarr[index].shopcar[goodindex].num =req.body.num;
+     fs.writeFile("www/json/user.json",JSON.stringify(usersarr),function(err){
+        if(err){
+            console.log("写入失败");
+            
+        }else{
+            console.log("写入成功");
+           
+        }
+    });
+    res.json(usersarr[index].shopcar);
+})
+
+app.post("/del",function(req,res){
+    var index=usersarr.findIndex(function(e){
+        return e.username==req.cookies.username;
+     })
+     console.log(req.body.good);
+     var goodindex =usersarr[index].shopcar.findIndex(function (e) { 
+        // console.log(e); 
+       return e.content == req.body.good ;
+    })
+    console.log(goodindex);
+    if(goodindex > -1){
+        usersarr[index].shopcar.splice(goodindex,1); 
+    }
+    fs.writeFile("www/json/user.json",JSON.stringify(usersarr),function(err){
+        if(err){
+            console.log("写入失败");
+            
+        }else{
+            console.log("写入成功");
+           
+        }
+    });
+    res.json(usersarr[index].shopcar);
 })
 
 fs.readFile("www/json/user.json",function(err,data){
