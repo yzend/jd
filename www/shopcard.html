@@ -346,7 +346,7 @@
         </div>
         <div class="list_bottom">
             <ul>
-                <li>
+                <!-- <li>
                     <input type="checkbox" id="good">
                     <div class="imgbox">
                         <div class="img">
@@ -361,7 +361,7 @@
                         ￥<span>3699</span>
                     </div>
                     <div class="number">
-                            <input type="number" min="1" placeholder="1">
+                            <input type="number" min="1" value="2">
                     </div>
                     
                     <div class="allprice">
@@ -372,8 +372,15 @@
                         <p>已到我的关注</p>
                         <p>加到我的关注</p>
                     </div>
-                </li>
+                </li> -->
+                <h1>请先登录</h1>
             </ul>
+        </div>
+        <div class="list_all">
+            
+            已选择：<span class="allgoodsnum">0</span>
+            <br>
+            总价：￥<span class="allgoodsprice">0</span>
         </div>
     </main>
     <footer>
@@ -521,5 +528,93 @@
         </div>
     </footer>
 </body>
-
+<script>
+    if( $.cookie("username")!="[object Object]"){
+        $.getJSON({
+            url:"./json/user.json",
+            success:function(data){
+                var index=data.findIndex(function(e){
+                    return e.username==$.cookie("username");
+                })
+                var shopcar = data[index].shopcar;
+                var str='';
+                shopcar.forEach(e => {
+                    str += '<li><input type="checkbox" id="good"><div class="imgbox"><div class="img"><img src="'+ e.imgsrc +'" alt=""></div></div><div class="content"><p>'+ e.content+'</p></div><div class="price">￥<span>'+e.price+'</span></div><div class="number"><input type="number" min="1" value="'+ e.num +'"></div><div class="allprice">￥<span>'+ (e.price * e.num) +'</span></div><div class="cao"><p id="del">删除</p><p>已到我的关注</p><p>加到我的关注</p></div></li>'
+                });
+                $(".list_bottom ul").html(str);
+                $(".allgoodsnum").text(shopcar.length);
+                var sum=0;
+                shopcar.forEach(e =>{
+                    sum += (e.price * e.num);
+                })
+                $(".allgoodsprice").text(num(sum));
+                $(".number input").change(function(){
+                    var goodnum = $(this).val();
+                    var goodname =$(this).parent('.number').prevAll('.content').text();
+                    var allprice = num(goodnum * $(this).parent('.number').prevAll('.price').children('span').text());
+                    console.log(allprice);
+                    $(this).parent('.number').nextAll('.allprice').children('span').text(allprice);
+                    console.log(goodname);
+                    $.post({
+                        url:"/changenum",
+                        data:{"good":goodname,"num":goodnum},
+                        success:function(data){
+                            var sum=0;
+                            console.log(data);
+                            data.forEach(e =>{
+                                sum += (e.price * e.num);
+                            })
+                        
+                            $(".allgoodsprice").text(num(sum));
+                        }
+                    })
+                })
+                $("#del").click(function(){
+                    var goodname =$(this).parent('.cao').prevAll('.content').text();
+                    // console.log(goodname);
+                    $.post({
+                        url:'/del',
+                        data:{"good":goodname},
+                        success:function(data){
+                            console.log(data);
+                            console.log("删除成功")
+                            location.href="shopcard.html";
+                        }
+                    })
+                })
+                
+            }
+        })
+    }
+    if($.cookie("username")!="[object Object]"){
+        console.log($("#username"))
+        $("#username").text("Hi~ "+$.cookie("username"));
+        $("#username_top").text($.cookie("username"));
+        $("#user_out").css({"display":"block"});
+        $("#user_out").html("<span id='out'>退出</span>");
+        console.log(1);
+        $.getJSON({
+            url:"./json/user.json",
+            success:function(data){
+                var index=data.findIndex(function(e){
+                    return e.username==$.cookie("username");
+                })
+                $("#shopcarnum").text(data[index].shopcar.length);
+                
+            }
+        })
+        $("#out").click(function(){
+            $.cookie("username", {
+                expires: -1
+            })
+            $("#shopcarnum").text("0");
+            location.href="index.html";
+        })
+    }
+    function num(i) {
+        var n = i.toFixed(1);
+        return n;
+    }
+    
+</script>
 </html>

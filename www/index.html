@@ -335,9 +335,9 @@
             </form>
         </div>
         <div class="shopcar">
-            <button>
+            <button id="toshopcard">
                 <i class="glyphicon glyphicon-shopping-cart"></i> 我的购物车
-                <sup>0</sup>
+                <sup id="shopcarnum">0</sup>
             </button>
         </div>
         <div class="flone">
@@ -691,7 +691,7 @@
                 <div class="main">
                     <ul>
                         <li>手机通讯
-                            <div class="lanbox active">
+                            <div class="lanbox actives">
                                 <!-- Swiper -->
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper">
@@ -2089,8 +2089,8 @@
     $(".y_ph .main li").hover(
         function () {
             console.log(1);
-            $(this).children(".lanbox").addClass("active");
-            $(this).siblings().children(".lanbox").removeClass("active");
+            $(this).children(".lanbox").addClass("actives");
+            $(this).siblings().children(".lanbox").removeClass("actives");
         }
     )
     var swiper1 = new Swiper('.shop_right .swiper-container', {
@@ -2153,7 +2153,9 @@
         prevEl: '.tese .swiper-button-prev',
       },
     });
-    
+    $("#toshopcard").click(function () { 
+        location.href="shopcard.html";
+     })
     // 物品填写
     $(document).ready(function(){
         $.ajax({
@@ -2176,8 +2178,10 @@
                         $.post({
                             url:"/addgoods",
                             data:{"imgsrc":imgsrc,"content":content,"price":price},
-                            success:function(){
+                            success:function(data){
                                 console.log("添加成功");
+                                console.log(data.shopcarnum);
+                                $("#shopcarnum").text(data.shopcarnum);
                             }
                         })
                     }else{
@@ -2298,10 +2302,21 @@
         $("#user_out").css({"display":"block"});
         $("#user_out").html("<span id='out'>退出</span>");
         console.log(1);
+        $.getJSON({
+            url:"./json/user.json",
+            success:function(data){
+                var index=data.findIndex(function(e){
+                    return e.username==$.cookie("username");
+                })
+                $("#shopcarnum").text(data[index].shopcar.length);
+                
+            }
+        })
         $("#out").click(function(){
             $.cookie("username", {
                 expires: -1
             })
+            $("#shopcarnum").text("0");
             location.href="index.html";
         })
     }

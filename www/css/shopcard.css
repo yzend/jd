@@ -274,7 +274,6 @@ main .list_top section {
   display: inline-block;
   height: 40px;
   line-height: 40px;
-  border: 1px solid red;
   box-sizing: border-box;
 }
 main .list_top .one {
@@ -308,7 +307,6 @@ main .list_bottom ul li {
 main .list_bottom ul li div {
   display: inline-block;
   height: 110px;
-  border: 1px solid red;
 }
 main .list_bottom ul li .imgbox {
   width: 150px;
@@ -356,6 +354,20 @@ main .list_bottom ul li .cao p {
   line-height: 20px;
 }
 main .list_bottom ul li .cao p:hover {
+  color: red;
+}
+main .list_bottom ul li .cao #del {
+  cursor: pointer;
+}
+main .list_all {
+  float: right;
+  margin-right: 145px;
+  color: #999;
+}
+main .list_all .allgoodsnum {
+  color: red;
+}
+main .list_all .allgoodsprice {
   color: red;
 }
 footer .footer_top {
@@ -539,4 +551,7 @@ footer .footer_bottom .last_img section:nth-child(5) {
 }
 footer .footer_bottom .last_img section:nth-child(6) {
   background-position: 0 -155px;
+}
+h1 {
+  text-align: center;
 }
